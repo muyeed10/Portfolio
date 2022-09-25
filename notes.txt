@@ -1,0 +1,215 @@
+*******FlexBox vs GRID:*********
+- grid has fixed box sizes, flexbox doesnt
+- grid not good for navbars... grid is meant for mostly big layouts
+like cards layout or structured layouts
+-flexbox is 1d and grid is 2d
+
+
+//////////////////////////////////////////////////////////////////////////
+Flexbox:
+^
+|   align
+|
+^
+align-items: center    #default is stretch (makes the div in the grid same size)
+align-items: flex-end
+align-items: flex-start
+
+order: {num}
+
+flex-direction:
+flex-wrap: wrap;   # new line grid (when spacing runs out)
+flex-basis: 33% #like width: 33%, if a div in a row is alone, then it becomes width 100% or takes up rest of the space
+
+gap: 1em; #space between divs in flexbox
+
+flex-shrink: 0; #div doesnt shrink in grid when size is reduced
+flex-grow: {num}; #div will grow according to {num} when size increased 
+
+justify-content: flex start/end, center, space-between, space-around
+
+flex: {num like 1,2,3}   #num in that specifies how many grids in flexbox row it should take 
+
+//////////////////////////////////////////////////////////////////////////////////////////
+Grids:
+
+display: grid;
+grid-template-coloumns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+
+
+****************************************************************************************************
+position: relative;
+position: static;
+position: absolute;
+position: fixed;
+
+
+
+
+**************************************************************************
+Window.localStorage (local storage).... part of the Window object 
+
+- locaStorage.clear()
+- localStorage.setItem(key, value)
+- localStorage.getItem(key);
+
+***************************************************************************
+transform: translateX/Y/Z;
+transform: rotateX/Y/Z(deg);
+transform: scale();
+
+***************************************************************************
+querySelectorAll reutrns a nodeList not an array:
+NodeList to Array:
+Array.from(document.querySelectorAll(".blah")); or
+[...document.querySelectorAll(".blah")];
+
+Array to NodeList:
+NodeList = array;
+*********************************************************
+mix-blend-mode: overlay: #mixes color when stack eg red+blue=green
+
+
+*************************************************************
+animation: 2 secs {ease-in-out, ease-in, ease-out} {infinite,etc}
+
+****************************************************************
+addEventListener("click/pointer/scroll/load/mousemove/mouseover/mouseout", {(event)/()} => {
+
+});
+removeEventListener("click", function);
+
+1. addEventListener("click" randomfunc(@argument))
+function randomfunc(@param, events) {} #events will always be the last param by default and always exist
+
+2. addEventListener("click", () => {
+
+});
+
+3. addEventListener("click", function(event){
+
+});
+
+event has methods/functions that can be used like event.target;, evnt.preventDefault; check 
+w3schools on event functions for more
+
+
+window.addEventListener("scroll"/"load"/{check window events in ww3}, loadLoader); //scroll, load, onclick
+window.setTimeOut(function, milliseconds);
+
+******************************************************************
+let newelem = docuement.createElement("img");
+document.body.appendchild(newelem);
+
+
+*****************************************************************
+pointer events
+
+
+*******************************************************
+.item1{
+
+}
+
+.item1:nth-child(1) {
+
+}
+
+.item1:nth-child(odd/even) {
+
+}
+**************************************************************
+console.log();
+alert();
+
+
+**************************************************************
+Arrays vs. Objects:
+
+let arr = []; or let arr = new Array();
+
+let obj = {firstname: xxx} or let obj = new Object(); obj.firstname = xxx;
+
+looping through object keys:
+
+for (let i in ibj) {
+
+}
+
+console.log(obj.firstname)
+
+
+**************************************************************************
+Window objects and properties:
+
+window objject has its own functions and each element object also has their own functions.
+
+to find functions search it up on w3schools or geeksforgreeks
+
+window.setTimeOut();
+
+The 2 examples below displays the browser window's height and width: (NOT including toolbars/scrollbars):
+var w = window.innerWidth;
+var h = window.innerHeight;
+
+
+******************************************************************************
+Event properties:
+
+such as event.preventDefault() //cancels event 
+
+check ww3 for event properties
+
+*******************************************************************************
+Python:     for (i in list) 
+Javascript: for (let i of input)
+
+element.children; is different from element.childNode;
+****************************************************************************
+swap two variables in js:
+
+var bum = 1;
+var num = 2;
+
+[bum,num] = [num,bum];
+
+//now bum = 2, num = 1
+
+
+******************************************************************************
+pseudo elements 
+
+::hover
+::first-letter
+::first-line
+::selection ""when text highlighted
+:has()
+:nth-child(x, 2x, nx)
+**********************************************************************************
+forms:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" placeholder="text visible in textbox">
+</form>
+
+The <label> tag defines a label for many form elements.
+
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+
+The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.
+
+<input type = "text"> uses only 1 line. to use multiple use <textarea></textarea>
+**********************************************************************************
+Drop down:
+<select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+</select>
