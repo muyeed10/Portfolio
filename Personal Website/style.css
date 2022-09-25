@@ -1,0 +1,921 @@
+* {
+    box-sizing: border-box;
+    animation: fade 2s;
+}
+
+.galbody * {
+    animation: appear 1s ease-in-out;
+}
+
+.navitem.navActive {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 20%;
+}
+
+.homeNavItem.navActive {
+    background-color: rgba(0, 0, 0, .1);
+    padding: 20%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.homeBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("homepic.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 95%;
+}
+
+.bodyHeader {
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: white;
+    text-align: center;
+    animation: appear 5s ease-in-out;
+}
+
+.container4 {
+    padding: 1%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 0 4px 10px #efefef;
+    width: 100%;
+}
+
+.homeNavbar.whiten {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 10px #efefef;
+}
+.homeNavbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, .05);
+    position: fixed;
+    top: 0%; /* need this since position is fixed*/
+    width: 100%;
+    z-index: 100;
+}
+
+.homeNavbar * {
+    padding: 1%;
+}
+
+.navbar * {
+    padding: 1%;
+}
+
+.homeBtn {
+    width: 4%;
+    background: none;
+}
+
+.navList {
+    padding: .2%;
+    width: 80%;
+    text-align: center;
+}
+
+.navList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navList ul li {
+    display: inline-block;
+}
+
+.navitem {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+.homeNavItem {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: .5s;
+}
+
+.homeNavItem.black {
+    color: black;
+}
+
+.bar {
+    color: white;
+    margin-right: 1%;
+    width: 3%;
+    background: none;
+    visibility: hidden;
+}
+
+.bar > i.dark {
+    color: white;
+}
+
+.bar:hover,
+.bar:focus {
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.homeBtn:hover,
+.homeBtn:focus {
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.navitem:hover {
+    background-color: rgba(0, 0, 0, .1);
+    color: red;
+    padding: 10%;
+}
+
+.homeNavItem:hover {
+    background-color: rgba(0, 0, 0, .1);
+    color: red;
+    padding: 10%;
+}
+
+.aboutmepar {
+    display: none;
+}
+
+.aboutmeactive {
+    display: grid;
+}
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container10 {
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.cardservices {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 0 4px 10px #efefef;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cardservices:hover {
+    background-color: var(--color);
+}
+
+.cardservices:hover > h3, .cardservices:hover > p {
+    color: white;
+}
+
+.cardservices:nth-child(1) {
+    --color: lightgreen;
+    border-top: 7px solid var(--color);
+}
+
+.cardservices:nth-child(2) {
+    --color: lightblue;
+    border-top: 7px solid var(--color);
+}
+
+.cardservices:nth-child(3) {
+    --color: #FC786B;
+    border-top: 7px solid var(--color);
+}
+
+.card {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 10px #efefef;
+    padding: 2%;
+    transition: 2s;
+}
+.card:hover,
+.card:focus {
+    box-shadow: 0 4px 10px red;
+    transform: scale(1.1);
+}
+#head {
+    color: red; 
+    display: inline-block;
+}
+
+.sec1 {
+    width: 60%;
+    text-align: center;
+}
+
+.pfpImg {
+    width: 40%;
+    transition: all 2s;
+    text-align: center;
+}
+
+.pfpImg:hover {
+    transform: scale(0.8);
+}
+ 
+#pfp {
+    border-radius: 50%;
+    width: 60%;
+    transition: all 2s;
+    border: 0.5rem solid;
+    border-color: #6175aa;
+ }
+
+.contBtn {
+    width: 40%;
+    text-align: center;
+    margin-top: 1%;
+    margin-bottom: 2%; 
+    transform: translateX(2%);
+}
+
+ .contact:hover {
+    transform: scale(1.2);
+}
+
+.readmore {
+    font-size: medium;
+    width: 50%;
+    opacity: 50%;
+    background: none ;
+    z-index: 5;
+    border: none;
+    box-shadow: 0 4px 10px #efefef;
+    transform: translateY(-110%);
+    cursor: pointer;
+}
+
+.readmore:hover {
+    opacity: 100%;
+}
+
+.container2 { 
+    width: 50%;
+    height: 40vh;
+    margin-left: 10%;
+    position: relative;
+}
+
+.card2 {
+    box-shadow: 0 4px 10px #efefef;
+    background-color: white;
+    width: 50%;
+    padding: 2%;
+    position: absolute;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.card2.one:hover,.card2.two:hover, .card2.three:hover {
+    background-color: var(--color);
+    color: white;
+}
+
+
+
+/********************************skills page below****************************************/
+.container6 {
+    width: 60%;
+    position: relative;
+    left: 20%;
+    background-color: white;
+    box-shadow: 0px 24px 40px #efefef;
+    padding: 2%;
+    position: relative;
+    transition: all 1s;
+}
+
+.container6:hover,
+.container6:focus {
+    box-shadow: 0 4px 10px red;
+    transform: scale(1.1);
+}
+
+.lineBar {
+    width: 100%;
+    background-color: rgb(179, 176, 176);
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 25px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.html {
+    position: relative;
+    --width: 90%;
+    width: var(--width);
+    height: 2%;
+    background-color: lightgreen;
+    border-radius: 5%;
+    animation: left-to-right 3s;
+}
+
+.htmlbarcircle {
+    border-radius: 100%;
+    border:1px solid green;
+    background-color: white;
+    position: absolute;
+    padding: 1%;
+    top: -2%;
+    left: 87%;
+    animation: appear 4s;
+}
+
+.pythonbarcircle {
+    border-radius: 100%;
+    border:1px solid blue;
+    background-color: white;
+    position: absolute;
+    padding: 1%;
+    top: 10%;
+    left: 83%;
+    animation: appear 4s;
+}
+
+.python {
+    position: relative;
+    --width: 85%;
+    width: var(--width);
+    height: 2%;
+    background-color: lightblue;
+    border-radius: 5%;
+    animation: left-to-right 3s;
+}
+
+.css {
+    position: relative;
+    --width: 80%;
+    width: var(--width);
+    height: 2%;
+    background-color: lightcoral;
+    border-radius: 5%;
+    animation: left-to-right 3s;
+}
+
+.cssbarcircle {
+    border-radius: 100%;
+    border:1px solid red;
+    background-color: white;
+    position: absolute;
+    padding: 1%;
+    top: 22%;
+    left: 77%;
+    animation: appear 4s;
+}
+
+.java, .c {
+    position: relative;
+    --width: 75%;
+    width: var(--width);
+    height: 2%;
+    background-color: lightsalmon;
+    border-radius: 5%;
+    animation: left-to-right 3s;
+}
+
+.javabarcircle, .cbarcircle {
+    border-radius: 100%;
+    border:1px solid salmon;
+    background-color: white;
+    position: absolute;
+    padding: 1%;
+    top: 35%;
+    left: 73%;
+    animation: appear 4s;
+}
+
+.c {
+    background-color: lightsteelblue;
+}
+.cbarcircle {
+    top: 51%;
+    left: 73%;
+    border: 1px solid steelblue;
+}
+
+.js {
+    position: relative;
+    --width: 65%;
+    width: var(--width);
+    height: 2%;
+    background-color: lightgreen;
+    border-radius: 5%;
+    animation: left-to-right 3s;
+}
+
+.jsbarcircle {
+    border-radius: 100%;
+    border:1px solid green;
+    background-color: white;
+    position: absolute;
+    padding: 1%;
+    top: 65%;
+    left: 62%;
+    animation: appear 4s;
+}
+
+.vb {
+    position: relative;
+    --width: 50%;
+    width: var(--width);
+    height: 2%;
+    background-color: lightslategray;
+    border-radius: 5%;
+    animation: left-to-right 3s;
+}
+
+.vbbarcircle {
+    border-radius: 100%;
+    border:1px solid slategray;
+    background-color: white;
+    position: absolute;
+    padding: 1%;
+    top: 77%;
+    left: 48%;
+    animation: appear 4s;
+}
+
+.others {
+    position: relative;
+    --width: 30%;
+    width: var(--width);
+    height: 2%;
+    background-color: lightsalmon;
+    border-radius: 5%;
+    animation: left-to-right 3s;
+}
+
+.otherbarcircle {
+    border-radius: 100%;
+    border:1px solid salmon;
+    background-color: white;
+    position: absolute;
+    padding: 1%;
+    top: 91%;
+    left: 28%;
+    animation: appear 4s;
+}
+
+.container7 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    box-shadow: 20px 20px 20px 20px #efefef;
+    padding: 1%;
+}
+
+.container8 {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    flex-wrap: wrap;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.courses {
+    border: 0px solid grey;
+    width: 40%;
+    height: 250px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.skillBtn {
+    display: block;
+    width: 60%;
+    padding: 2%;
+    height: auto;
+    margin-top: 1%;
+    margin-right: 1%;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid green;
+    background-color: white;
+    color: green;
+}
+
+.skillBtn:hover,
+.skillBtn:focus {
+    background-color: green;
+    color: white;
+}
+
+.courseDes {
+    border: 1px solid grey;
+    border-radius: 25px;
+    width: 50%;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/**************************************projects section below***********************/
+
+.container3 {
+    display: flex;
+    padding: 2%;
+    justify-content: center;
+    gap: 4rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.projCard:nth-child(1) {
+    --color: green;
+    --footercolor: green;
+}
+.projCard:nth-child(2) {
+    --color: red;
+    --footercolor: red;
+}
+.projCard:nth-child(3) {
+    --color: blue;
+    --footercolor: blue;
+}
+
+.projCard {
+    width: 30%;
+    box-shadow: 0 4px 10px #efefef;
+    border-radius: 25px;
+    overflow: hidden;
+    background-color: white;
+    transition: 800ms ease;
+    animation: 2s spinAround;
+}
+
+.projCard:nth-child(1):hover,.projCard:nth-child(2):hover,.projCard:nth-child(3):hover{
+    box-shadow: 0 4px 10px var(--color);
+    transform: scale(1.1);
+}
+
+.container3-image > img {
+    width: 100%;
+    border-radius: 25px 25px 0px 0px ;
+}
+
+.projDes {
+    text-align: center;
+    padding: 1.5%;
+}
+
+.projDes > p {
+    font-size: large;
+}
+
+.projDes > h1 {
+    font-weight: bold;
+    color: var(--color);
+}
+
+.projFooter {
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    justify-content: space-between;
+    background-color: var(--footercolor);
+    border-radius: 0px 0px 25px 25px;
+}
+
+.projFL {
+    text-align: center;
+    height: 5vh;
+    flex: 1;
+    border: 1px solid grey;
+}
+
+.container9 {
+    border: 2px solid red;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+}
+/********************************** gallery section**********************/
+.tools {
+    border: 1px solid yellow;
+    width: 50%;
+}
+
+.tools > ul {
+    font-size: 1.5rem;
+}
+
+.gallerybody {
+    width: 100%;
+    height: 100vh;
+}
+
+.gallerybody ul {
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+
+.gallerybody ul li {
+    inset: 0;  
+    position: absolute;
+}
+
+.galPic {
+    width: 100%;
+    object-fit: cover;
+    object-position: left;
+    display: none;
+    transition: 2s;
+}
+
+.galActive {
+    display: flex;
+}
+
+.galNext {
+    position: absolute; 
+    top: 45%;
+    z-index: 100;
+    color: black;
+    font-size: 4rem;
+    left: 95%;
+    width: 5%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.galPrev {
+    position: absolute; 
+    border: 2px solid yellow;
+    top: 45%;
+    z-index: 100;
+    color: black;
+    font-size: 4rem;
+    width: 5%;
+    background-color: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    cursor: pointer;
+}
+
+.galNext:hover,
+.galPrev:hover,
+.galNext:focus,
+.galPrev.focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+
+
+/************************************************contact section******************/
+
+.contactForm {
+    width: 60%;
+    margin-left: 20%;
+    padding: 2%;
+    
+}
+
+.contactForm > label {
+    font-weight: bold;
+}
+
+.contactForm > input[type=text] {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+}
+
+#Inquiries {
+    width: 100%;
+    padding: .5rem;
+    border-radius: 10px;
+    border: 1px solid grey;
+    height: 10rem;
+}
+
+.contactForm > input[type=submit] {
+    padding: .5rem;
+    border-radius: 10px;
+    color: white;
+    background-color: green;
+}
+
+
+
+
+/*******************************************animations********************************/
+@keyframes left-to-right {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: var(--width);
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+        transform: translateY(-50%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+@keyframes shake {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes spinAround {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media all and (min-width: 100px) and (max-width: 1000px) {
+    .navbar {
+        background-color: white;
+        box-shadow: 0 4px 10px #efefef;
+        display: flex;
+        gap: 75%;
+    }
+    
+    .navbar * {
+        padding: 1%;
+    }
+    
+    .homeBtn {
+        width: 8%;
+        background: none;
+    }
+    
+    .navList {
+        padding: .2%;
+        width: 100%;
+        text-align: center;
+        order: 2; 
+        display: none;
+    }
+
+    .navList.active {
+        display: flex;
+    }
+    
+    .navList ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .navList ul li {
+        display: block;
+    }
+
+    .navitem:hover {
+        padding: 2%;
+    }
+
+    .homeNavItem:hover {
+        padding: 2%;
+    }
+
+    .bar {
+        order: 2;
+        width: 8%;
+        visibility: visible;
+    }
+
+    .sec1 {
+        width: 100%;
+        font-size: small;
+    }
+
+    .pfpImg {
+        width: 60%;
+    }
+
+    #pfp {
+        width: 100%;
+    }
+
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projCard {
+        width: 80%;
+    }
+    .container8 {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .container6 {
+        width: 90%;
+        left: 5%;
+    }
+
+    .galPic {
+        position: absolute;
+        width: 100%;
+        top: 30%;
+    }
+    .gallerybody {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: relative;
+    }
+    .galNext {
+        left: 93%;
+        width: 5%;
+        font-size: 2rem;
+    }
+    .galPrev {
+        width: 5%;
+        font-size: 2rem;
+    }
+
+    .courseDes {
+        margin-top: 4%;
+        height: 300px;
+        width: 100%;
+    }
+
+    .courses {
+        width: 100%;
+    }
+    .skillBtn {
+        width: 100%;
+    }
+
+    .readmore {
+        width: 60%;
+    }
+
+}
+
+@media all and (min-width: 1001px) { 
+    .galPic {
+        height: 100vh;;
+    }
+}
+
+
