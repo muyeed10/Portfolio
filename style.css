@@ -47,12 +47,12 @@ body {
     padding: 1%;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    background-color: white;
-    box-shadow: 0 4px 10px #efefef;
+.navBar {   
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     width: 100%;
+    box-shadow: 0 4px 10px #efefef;
+    z-index: 100;
 }
 
 .homeNavbar.whiten {
@@ -60,8 +60,8 @@ body {
     box-shadow: 0 4px 10px #efefef;
 }
 .homeNavbar {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
     background-color: rgba(255, 255, 255, .05);
     position: fixed;
     top: 0%; /* need this since position is fixed*/
@@ -73,19 +73,26 @@ body {
     padding: 1%;
 }
 
-.navbar * {
+.navBar * {
     padding: 1%;
 }
 
 .homeBtn {
-    width: 4%;
-    background: none;
+    display: flex;
+    padding-left: 10%;
+    justify-content:baseline;
+    align-items: center;
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .navList {
     padding: .2%;
-    width: 80%;
+    width: 100%;
     text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 10;
 }
 
 .navList ul {
@@ -116,9 +123,12 @@ body {
 }
 
 .bar {
+    display: flex;
+    padding-right: 10%;
+    justify-content: end;
+    align-items: center;
     color: white;
-    margin-right: 1%;
-    width: 3%;
+    width: 100%;
     background: none;
     visibility: hidden;
 }
@@ -788,57 +798,38 @@ body {
 }
 
 @media all and (min-width: 100px) and (max-width: 1000px) {
-    .navbar {
-        background-color: white;
-        box-shadow: 0 4px 10px #efefef;
-        display: flex;
-        gap: 75%;
-    }
-    
-    .navbar * {
+
+    .homeNavbar {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        height: auto;
         padding: 1%;
     }
-    
+        
     .homeBtn {
-        width: 8%;
-        background: none;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-end: 1;
+        padding: 5%;
     }
-    
-    .navList {
-        padding: .2%;
-        width: 100%;
-        text-align: center;
-        order: 2; 
+
+    .bar {
+        grid-column-start: 10;
+        grid-row-end: 1;
+        visibility: visible;
+    }
+
+    .navList {  
+        grid-row-start: 2;
+        grid-column: span 10;
         display: none;
     }
 
     .navList.active {
-        display: flex;
-    }
-    
-    .navList ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    
-    .navList ul li {
         display: block;
     }
-
-    .navitem:hover {
-        padding: 2%;
-    }
-
-    .homeNavItem:hover {
-        padding: 2%;
-    }
-
-    .bar {
-        order: 2;
-        width: 8%;
-        visibility: visible;
+    .navList > ul > li {
+        display: block;
     }
 
     .sec1 {

@@ -36,6 +36,10 @@ Grids:
 display: grid;
 grid-template-coloumns: repeat(auto-fit, minmax(300px, 1fr));
 
+grid-coloumn: span 2;
+grid row-start/end:
+grid coloumn-start/end:
+
 
 
 

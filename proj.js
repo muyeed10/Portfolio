@@ -1,5 +1,5 @@
-var menuBar = document.querySelector(".navbar").querySelector(".bar");
-var navList = document.querySelector(".navbar").querySelector(".navList");
+var menuBar = document.querySelector(".navBar").querySelector(".bar");
+var navList = document.querySelector(".navBar").querySelector(".navList");
 
 
 menuBar.addEventListener("click", () => {
