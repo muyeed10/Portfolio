@@ -19,6 +19,13 @@ readmore.addEventListener("click", () => {
 
 
 menuBar.addEventListener("click", () => {
+    if (menuBar.children[0].classList.value === "fa fa-times fa-2x") {
+        menuBar.children[0].classList.value = "list large icon barstyle";
+    } 
+    else {
+        menuBar.children[0].classList.value = "fa fa-times fa-2x";
+    }
+    console.log( menuBar.children[0].classList);
     navList.classList.toggle("active");
 });
 

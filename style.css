@@ -231,6 +231,18 @@ body {
 #head {
     color: red; 
     display: inline-block;
+    position: relative;
+}
+#head::after {
+    content: "";
+    position: absolute;
+    border-left: 1px solid red;
+    height: 100%;
+    width: 100%;
+    left: 0%;
+    background-color: white;
+    animation: typeAnimation 3s steps(16) infinite;
+
 }
 
 .sec1 {
@@ -622,20 +634,52 @@ body {
 }
 
 .container9 {
-    border: 2px solid red;
     width: 90%;
     margin-left: 5%;
     display: flex;
-}
-/********************************** gallery section**********************/
-.tools {
-    border: 1px solid yellow;
-    width: 50%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.tools > ul {
-    font-size: 1.5rem;
+.softwares {
+    position: relative;
+    width: 10%;
+    background-color: white;
+    box-shadow: 0 4px 10px #efefef;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    z-index: 1;
 }
+
+.softwares.darkHighlight {
+    background-color:rgba(0, 0, 0, .8)
+}
+.softwares > img.darken {
+    filter:brightness(40%);
+}
+
+.softwares > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+    padding: 5%;
+}
+
+.softwares > p {
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    z-index: 0;
+}
+
+/********************************** gallery section**********************/
 
 .gallerybody {
     width: 100%;
@@ -737,6 +781,23 @@ body {
     background-color: green;
 }
 
+.contactList {
+    border: 1px solid red;
+    width: 80%;
+    margin-left: 10%;
+    padding: 1rem;
+    
+}
+.contactList > ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.contactList > ul > li {
+    display: inline-block;
+}
 
 
 
@@ -797,8 +858,28 @@ body {
     }
 }
 
+@keyframes typeAnimation {
+    100% {
+        left: 110%;
+    }
+}
+
+@keyframes blinker {
+    100% {
+        opacity: 100%;
+    }
+}
+
 @media all and (min-width: 100px) and (max-width: 1000px) {
 
+    .homeBody {
+        background-image: url("homepic2.jpg");
+        background-position: center;
+    }
+
+    .bodyHeader {
+        font-size: 3rem;
+    }
     .homeNavbar {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
@@ -850,6 +931,18 @@ body {
         align-items: center;
     }
 
+    .container9 {
+        flex-wrap: wrap;
+    }
+
+    .softwares {
+        width: 20%;
+        padding: 2%;
+    }
+
+    .softwares > p {
+        font-size: medium;
+    }
     .projCard {
         width: 80%;
     }
