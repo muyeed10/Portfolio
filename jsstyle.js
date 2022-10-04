@@ -39,7 +39,9 @@ function loadLoader() {
 
     navBar.classList.toggle("whiten", window.scrollY > 0);
     homenavitem.forEach(black);
-    bar.classList.toggle("black", window.scrollY > 0);
+    if (bar!= null) {
+        bar.classList.toggle("black", window.scrollY > 0);
+    }
     //gives more smooth transition than (if (window.scrollY) > 0)
     //first code would execute once based on the statement, second code would execute multiple times everytime scrolled
 }

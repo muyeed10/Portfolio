@@ -257,7 +257,7 @@ body {
 .container10 {
     margin-left: 10%;
     width: 80%;
-    height: 10rem;
+    height: 15rem;
     display: flex;
     justify-content: center;
     gap: 1em;
@@ -616,7 +616,6 @@ body {
 }
 
 .contactList {
-    border: 1px solid red;
     width: 80%;
     margin-left: 10%;
     padding: 1rem;
@@ -626,7 +625,16 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 15rem;
+}
+
+.contactList > ul > li{
+    padding: 1%;
+}
+
+.contactList > ul > li:hover {
+    background-color: #36454f;
+    color: white;
 }
 
 .contactList > ul > li {
@@ -718,6 +726,10 @@ body {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         height: auto;
+        padding: 3%;
+    }
+
+    .navBar {
         padding: 3%;
     }
         
