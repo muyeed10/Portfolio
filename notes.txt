@@ -170,7 +170,6 @@ check ww3 for event properties
 Python:     for (i in list) 
 Javascript: for (let i of input)
 
-element.children; is different from element.childNode;
 ****************************************************************************
 swap two variables in js:
 
@@ -217,3 +216,28 @@ Drop down:
       <option value="canada">Canada</option>
       <option value="usa">USA</option>
 </select>
+************************************************************************************************
+accessing parent and children in js:
+
+firstchild of a parent (returns null if none):
+let firstChild = parentElement.firstChild; 
+
+let lastChild = parentElement.lastChild; 
+
+
+element.children; is different from element.childNode;The childNodes property 
+returns all child elements with any node type. To get the child element with only the element node type, you use the children property:
+
+to get parent of a child:
+let parent = children.parentNode; 
+
+to get siblings:
+let sibling = elem.nextElementSibling;
+let sibling = elem.previousElementSibling;
+
+let parent = eleme.parentNode
+*****************************************************************************************************
+
+box-shadow: 10px 15px #efefef; //3D-effect
+
+***************************************************************************************************

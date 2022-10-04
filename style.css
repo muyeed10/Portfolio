@@ -318,7 +318,10 @@ body {
     color: white;
 }
 
-
+.footer {
+    background-color: #36454f;
+    height: 10rem;
+}
 
 /********************************skills page below****************************************/
 .container6 {
