@@ -274,25 +274,32 @@ body {
 .frontCard {
     position: absolute;
     text-align: center;
-    background-color: lightgreen;
-    color: white;
+    box-shadow: 0 4px 10px #efefef;
+    color: black;
     height: 10rem;
     backface-visibility: hidden;
     width: 100%;
+    border-radius: 15px;
 }
 
 .backCard {
     position: absolute;
     text-align: center;
-    background-color: green;
+    background-color: rgb(20, 170, 20);
     color: white;
     backface-visibility: hidden;
     width: 100%;
     height: 10rem;
     transform: rotateY(180deg);
+    border-radius: 15px;
 }
 
-.rotatingCard:hover {
+.frontCard:nth-child(1) {
+    border-top: 7px solid lightgreen;
+}
+
+.rotatingCard:hover,
+.rotatingCard:focus  {
     transform: rotateY(180deg);
 }
 .footer {
