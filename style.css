@@ -242,7 +242,6 @@ body {
     left: 0%;
     background-color: white;
     animation: typeAnimation 3s steps(16) infinite;
-
 }
 
 .sec1 {
@@ -341,171 +340,68 @@ body {
     transform: scale(1.1);
 }
 
-.lineBar {
-    width: 100%;
-    background-color: rgb(179, 176, 176);
-    margin-top: 3%;
+.skillContainer {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 1%;
+
+}
+
+.skillTag {
+    width: 10%;
+    background-color: rgb(0, 195, 255);
     text-align: center;
-    border-radius: 25px;
-    text-align: left;
+    text-align: center;
     font-weight: bold;
+    color: black;
 }
 
-.html {
-    position: relative;
+.linebar {
+    width: var(--width);
+    background-color: rgb(2, 119, 252);
+    animation: left-to-right 3s;
+    padding: 1.5%;
+}
+
+[data-value="HTML"] {
     --width: 90%;
-    width: var(--width);
-    height: 2%;
-    background-color: lightgreen;
-    border-radius: 5%;
-    animation: left-to-right 3s;
 }
-
-.htmlbarcircle {
-    border-radius: 100%;
-    border:1px solid green;
-    background-color: white;
-    position: absolute;
-    padding: 1%;
-    top: -2%;
-    left: 87%;
-    animation: appear 4s;
-}
-
-.pythonbarcircle {
-    border-radius: 100%;
-    border:1px solid blue;
-    background-color: white;
-    position: absolute;
-    padding: 1%;
-    top: 10%;
-    left: 83%;
-    animation: appear 4s;
-}
-
-.python {
-    position: relative;
+[data-value="CSS"] {
     --width: 85%;
-    width: var(--width);
-    height: 2%;
-    background-color: lightblue;
-    border-radius: 5%;
-    animation: left-to-right 3s;
+}
+[data-value="Python"] {
+    --width: 85%;
 }
 
-.css {
-    position: relative;
+[data-value="JS"] {
     --width: 80%;
-    width: var(--width);
-    height: 2%;
-    background-color: lightcoral;
-    border-radius: 5%;
-    animation: left-to-right 3s;
 }
 
-.cssbarcircle {
-    border-radius: 100%;
-    border:1px solid red;
-    background-color: white;
-    position: absolute;
-    padding: 1%;
-    top: 22%;
-    left: 77%;
-    animation: appear 4s;
-}
-
-.java, .c {
-    position: relative;
+[data-value="Java"] {
     --width: 75%;
-    width: var(--width);
-    height: 2%;
-    background-color: lightsalmon;
-    border-radius: 5%;
-    animation: left-to-right 3s;
 }
 
-.javabarcircle, .cbarcircle {
-    border-radius: 100%;
-    border:1px solid salmon;
-    background-color: white;
-    position: absolute;
-    padding: 1%;
-    top: 35%;
-    left: 73%;
-    animation: appear 4s;
+[data-value="C"] {
+    --width: 70%;
 }
 
-.c {
-    background-color: lightsteelblue;
-}
-.cbarcircle {
-    top: 51%;
-    left: 73%;
-    border: 1px solid steelblue;
-}
-
-.js {
-    position: relative;
-    --width: 65%;
-    width: var(--width);
-    height: 2%;
-    background-color: lightgreen;
-    border-radius: 5%;
-    animation: left-to-right 3s;
-}
-
-.jsbarcircle {
-    border-radius: 100%;
-    border:1px solid green;
-    background-color: white;
-    position: absolute;
-    padding: 1%;
-    top: 65%;
-    left: 62%;
-    animation: appear 4s;
-}
-
-.vb {
-    position: relative;
+[data-value="VB"] {
     --width: 50%;
-    width: var(--width);
-    height: 2%;
-    background-color: lightslategray;
-    border-radius: 5%;
-    animation: left-to-right 3s;
 }
 
-.vbbarcircle {
-    border-radius: 100%;
-    border:1px solid slategray;
-    background-color: white;
-    position: absolute;
-    padding: 1%;
-    top: 77%;
-    left: 48%;
-    animation: appear 4s;
+[data-value="Node"] {
+    --width: 25%;
+}
+[data-value="React"] {
+    --width: 25%;
+}
+[data-value="Express"] {
+    --width: 20%;
+}
+[data-value="Mongo"] {
+    --width: 20%;
 }
 
-.others {
-    position: relative;
-    --width: 30%;
-    width: var(--width);
-    height: 2%;
-    background-color: lightsalmon;
-    border-radius: 5%;
-    animation: left-to-right 3s;
-}
-
-.otherbarcircle {
-    border-radius: 100%;
-    border:1px solid salmon;
-    background-color: white;
-    position: absolute;
-    padding: 1%;
-    top: 91%;
-    left: 28%;
-    animation: appear 4s;
-}
 
 .container7 {
     width: 80%;
