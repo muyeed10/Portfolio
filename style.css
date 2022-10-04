@@ -174,47 +174,6 @@ body {
     align-items: center;
 }
 
-.container10 {
-    margin-left: 10%;
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-    gap: 1em;
-}
-
-.cardservices {
-    padding: 2%;
-    background-color: white;
-    box-shadow: 0 4px 10px #efefef;
-    border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-
-.cardservices:hover {
-    background-color: var(--color);
-}
-
-.cardservices:hover > h3, .cardservices:hover > p {
-    color: white;
-}
-
-.cardservices:nth-child(1) {
-    --color: lightgreen;
-    border-top: 7px solid var(--color);
-}
-
-.cardservices:nth-child(2) {
-    --color: lightblue;
-    border-top: 7px solid var(--color);
-}
-
-.cardservices:nth-child(3) {
-    --color: #FC786B;
-    border-top: 7px solid var(--color);
-}
 
 .card {
     width: 80%;
@@ -295,32 +254,54 @@ body {
     opacity: 100%;
 }
 
-.container2 { 
-    width: 50%;
-    height: 40vh;
+.container10 {
     margin-left: 10%;
+    width: 80%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.rotatingCard {
     position: relative;
+    width: 30%;
+    transform-style: preserve-3d;
+    transition: all 1.5s ease;
+    transform-style: preserve-3d;
 }
 
-.card2 {
-    box-shadow: 0 4px 10px #efefef;
-    background-color: white;
-    width: 50%;
-    padding: 2%;
+.frontCard {
     position: absolute;
-    border-radius: 25px;
-    transition: 0.5s;
-}
-
-.card2.one:hover,.card2.two:hover, .card2.three:hover {
-    background-color: var(--color);
+    text-align: center;
+    background-color: lightgreen;
     color: white;
+    height: 10rem;
+    backface-visibility: hidden;
+    width: 100%;
 }
 
+.backCard {
+    position: absolute;
+    text-align: center;
+    background-color: green;
+    color: white;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 10rem;
+    transform: rotateY(180deg);
+}
+
+.rotatingCard:hover {
+    transform: rotateY(180deg);
+}
 .footer {
     background-color: #36454f;
     height: 10rem;
+    width: 100%;
 }
+
+
 
 /********************************skills page below****************************************/
 .container6 {
@@ -404,60 +385,6 @@ body {
 }
 
 
-.container7 {
-    width: 80%;
-    margin-left: 10%;
-    margin-right: 10%;
-    background-color: white;
-    box-shadow: 20px 20px 20px 20px #efefef;
-    padding: 1%;
-}
-
-.container8 {
-    display: flex;
-    justify-content: center;
-    gap: 2%;
-    flex-wrap: wrap;
-    margin-left: 1%;
-    margin-right: 1%;
-}
-
-.courses {
-    border: 0px solid grey;
-    width: 40%;
-    height: 250px;
-    overflow: hidden;
-    overflow-y: scroll;
-}
-
-.skillBtn {
-    display: block;
-    width: 60%;
-    padding: 2%;
-    height: auto;
-    margin-top: 1%;
-    margin-right: 1%;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid green;
-    background-color: white;
-    color: green;
-}
-
-.skillBtn:hover,
-.skillBtn:focus {
-    background-color: green;
-    color: white;
-}
-
-.courseDes {
-    border: 1px solid grey;
-    border-radius: 25px;
-    width: 50%;
-    padding: 2%;
-    font-weight: bold;
-    font-size: 1rem;
-}
 
 /**************************************projects section below***********************/
 
@@ -784,7 +711,7 @@ body {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         height: auto;
-        padding: 1%;
+        padding: 3%;
     }
         
     .homeBtn {
@@ -811,6 +738,18 @@ body {
     }
     .navList > ul > li {
         display: block;
+    }
+
+    .navitem:hover {
+        background-color: rgba(0, 0, 0, .1);
+        color: red;
+        padding: 2%;
+    }
+    
+    .homeNavItem:hover {
+        background-color: rgba(0, 0, 0, .1);
+        color: red;
+        padding: 2% 45%;
     }
 
     .sec1 {
@@ -892,6 +831,15 @@ body {
 
     .readmore {
         width: 60%;
+    }
+
+    .container10 {
+        flex-wrap: wrap;
+        height: 30rem;
+    }
+
+    .rotatingCard {
+        width: 100%;
     }
 
 }
