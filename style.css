@@ -361,6 +361,7 @@ body {
     background-color: rgb(2, 119, 252);
     animation: left-to-right 3s;
     padding: 1.5%;
+    position: relative;
 }
 
 [data-value="HTML"] {
