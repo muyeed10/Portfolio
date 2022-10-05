@@ -746,6 +746,7 @@ body {
         
     .skillTag {
         font-size:x-small;
+        border: 1px solid #1904ff;
     }
 
     [data-value="python"] {
@@ -831,7 +832,7 @@ body {
 
     .container6 {
         width: 90%;
-        left: 5%;
+        margin-left: 5%;
     }
 
     .galPic {
