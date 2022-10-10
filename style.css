@@ -57,6 +57,7 @@ body {
     width: 100%;
     box-shadow: 0 4px 10px #efefef;
     z-index: 100;
+    top: 0%;
 }
 
 .homeNavbar.whiten {
