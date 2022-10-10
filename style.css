@@ -121,14 +121,17 @@ body {
     color: black;
     font-size: 1.5rem;
     transition: .5s;
-    padding: 20%;
 }
+
 .homeNavItem {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
     transition: .5s;
-    padding: 20%;
+}
+
+.black {
+    color: black;
 }
 
 .homeNavItem.black {
@@ -152,7 +155,6 @@ body {
 
 .bar:hover,
 .bar:focus {
-    background-color: rgba(0, 0, 0, .2);
     cursor: pointer;
 }
 
@@ -836,7 +838,7 @@ body {
     .bodyHeader {
         font-size: 3rem;
     }
-    .homebar {
+    .homeNavbar {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         height: auto;
@@ -884,13 +886,13 @@ body {
     .navitem:hover {
         background-color: rgba(0, 0, 0, .1);
         color: red;
-        padding: 0%
+        width: 100%;
     }
     
     .homeNavItem:hover {
         background-color: rgba(0, 0, 0, .1);
         color: red;
-        padding: 2% 45%;
+        width: 100%;
     }
 
     .sec1 {
