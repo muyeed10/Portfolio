@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    animation: fade 2s;
 }
 
 :root {
@@ -12,18 +11,17 @@
 }
 
 .navitem.navActive {
-    background-color: rgba(0, 0, 0, .1);
-    padding: 20%;
+    color: red;
 }
 
 .homeNavItem.navActive {
     background-color: rgba(0, 0, 0, .1);
-    padding: 20%;
 }
 
 body {
     margin: 0;
     padding: 0;
+    animation: fade 1s ease-in;
 }
 
 .homeBody {
@@ -52,7 +50,9 @@ body {
 }
 
 .navBar {   
+    position: fixed;
     display: grid;
+    background-color: rgb(255, 255, 255);
     grid-template-columns: repeat(10, 1fr);
     width: 100%;
     box-shadow: 0 4px 10px #efefef;
@@ -81,6 +81,11 @@ body {
     padding: 1%;
 }
 
+.homePar {
+    font-size: 1.1rem;
+
+}
+
 .homeBtn {
     display: flex;
     padding-left: 10%;
@@ -97,6 +102,7 @@ body {
     text-align: center;
     grid-column-start: 2;
     grid-column-end: 10;
+    animation: fadeDown .5s ease-in-out;
 }
 
 .navList ul {
@@ -114,12 +120,14 @@ body {
     color: black;
     font-size: 1.5rem;
     transition: .5s;
+    padding: 20%;
 }
 .homeNavItem {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
     transition: .5s;
+    padding: 20%;
 }
 
 .homeNavItem.black {
@@ -156,13 +164,11 @@ body {
 .navitem:hover {
     background-color: rgba(0, 0, 0, .1);
     color: red;
-    padding: 10%;
 }
 
 .homeNavItem:hover {
     background-color: rgba(0, 0, 0, .1);
     color: red;
-    padding: 10%;
 }
 
 .aboutmepar {
@@ -178,19 +184,23 @@ body {
     align-items: center;
 }
 
-
 .card {
     width: 80%;
     background-color: white;
     box-shadow: 0 4px 10px #efefef;
     padding: 2%;
-    transition: 2s;
+    transition: all 2s;
 }
 .card:hover,
 .card:focus {
     box-shadow: 0 4px 10px red;
     transform: scale(1.1);
 }
+.greetings {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
 #head {
     color: red; 
     display: inline-block;
@@ -272,29 +282,35 @@ body {
     width: 30%;
     transform-style: preserve-3d;
     transition: all 1.5s ease;
-    transform-style: preserve-3d;
 }
 
 .frontCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
     text-align: center;
     box-shadow: 0 4px 10px #efefef;
-    background-image: linear-gradient(to top, #d8f2d8, #b7f7b7, #93fb93, #67fd6b, #00ff37);
+    background-color: white;
     color: black;
     height: 10rem;
     backface-visibility: hidden;
     width: 100%;
+    height: 15rem;
     border-radius: 15px;
 }
 
 .backCard {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
     text-align: center;
-    color: white;
-    background-image: linear-gradient(to top, #99ff99, #7ae27a, #5bc65d, #39ab3f, #00901f);
+    color: black;
+    background-image: linear-gradient(to right bottom, #fff8f8, #ffc8c5, #ff968c, #ff6050, #ff0000);
     backface-visibility: hidden;
     width: 100%;
-    height: 10rem;
+    height: 15rem;
     transform: rotateY(180deg);
     border-radius: 15px;
 }
@@ -304,13 +320,21 @@ body {
 }
 
 .rotatingCard:hover,
-.rotatingCard:focus  {
+.frontCard:focus  {
     transform: rotateY(180deg);
 }
 .footer {
+    display:flex;
+    align-items: center;
+    justify-content: center;
     background-color: #36454f;
     height: 10rem;
     width: 100%;
+}
+
+.footer > p {
+    font-size: 1rem;
+    color: white;
 }
 
 
@@ -397,8 +421,76 @@ body {
     --width: calc(100% - var(--skilltag-width) - 80% + 10%);
 }
 
+.container11 {
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px #efefef;
+    border-radius: 15px;
+    padding: 2%;
+}
 
+.container12 {
+    padding: 2%;
+    gap: 1%;
+    overflow-x: scroll;
+    white-space: no-wrap;
+    display: flex;
+    max-height: 600px;
+}
+.skillCard {
+    min-width: 400px;
+    min-height: 450px;
+    box-shadow: 3px 2px 15px 4px #efefef;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+    position: relative;
+}
 
+.icons {
+    position: absolute;
+    bottom: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.container12Icons {
+    border: 3px solid var(--skillCardColor);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+.container12Icons:hover {
+    background-color: var(--skillCardColor);
+    color: white;
+}
+.skillCard > h3 {
+    font-weight: bold;
+}
+
+.skillCard:nth-child(1) {
+    --skillCardColor: lightgreen;
+    border-top: 5px solid var(--skillCardColor);
+}
+.skillCard:nth-child(2) {
+    --skillCardColor: lightblue;
+    border-top: 5px solid var(--skillCardColor);
+}
+.skillCard:nth-child(3) {
+    --skillCardColor: lightcoral;
+    border-top: 5px solid var(--skillCardColor);
+}
+.skillCard:nth-child(4) {
+    --skillCardColor: black;
+    border-top: 5px solid var(--skillCardColor);
+}
+
+.skillCard:hover {
+    transform: translateY(-1.5%);
+}
 /**************************************projects section below***********************/
 
 .container3 {
@@ -677,13 +769,14 @@ body {
 @keyframes fade {
     from {
         opacity: 0.4;
-        transform: translateY(-50%);
+        transform: translateX(-100%);
     }
     to {
         opacity: 1;
         transform: translateY(0%);
     }
 }
+
 
 @keyframes shake {
     0% {
@@ -723,6 +816,15 @@ body {
     }
 }
 
+@keyframes fadeDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 @media all and (min-width: 100px) and (max-width: 1000px) {
 
     .homeBody {
@@ -733,7 +835,7 @@ body {
     .bodyHeader {
         font-size: 3rem;
     }
-    .homeNavbar {
+    .homebar {
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         height: auto;
@@ -781,7 +883,7 @@ body {
     .navitem:hover {
         background-color: rgba(0, 0, 0, .1);
         color: red;
-        padding: 2%;
+        padding: 0%
     }
     
     .homeNavItem:hover {
@@ -825,14 +927,10 @@ body {
         width: 80%;
         font-size: small;
     }
-    .container8 {
-        flex-direction: column;
-        align-content: center;
-    }
-
+   
     .container6 {
-        width: 90%;
-        margin-left: 5%;
+        width: 98%;
+        margin-left: 1%;
     }
 
     .galPic {
@@ -875,13 +973,35 @@ body {
 
     .container10 {
         flex-wrap: wrap;
-        height: 30rem;
+        height: 45rem;
     }
 
     .rotatingCard {
         width: 100%;
     }
 
+    .container11 {
+        width: 98%;
+        margin-left: 1%;
+    }
+
+    .skillCard {
+        min-width: 300px;
+        font-size: 1rem;
+    }
+
+    .container12Icons {
+        font-size: 1rem;
+    }
+
+    .greetings {
+        font-size: 2.5rem;
+    }
+
+    .card {
+        width: 96%;
+        margin-left: 2%;
+    }
 }
 
 @media all and (min-width: 1001px) and (max-width: 1450px) { 
