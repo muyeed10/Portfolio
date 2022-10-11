@@ -24,6 +24,13 @@ body {
     animation: fade 1s ease-in;
 }
 
+.htmlHeader {
+    color: red;
+    text-align: center; 
+    font-weight: bold; 
+    margin-top: 5%;
+}
+
 .homeBody {
     display: flex;
     justify-content: center;
@@ -498,6 +505,7 @@ body {
 
 .container3 {
     display: flex;
+    flex-wrap: wrap;
     padding: 2%;
     justify-content: center;
     gap: 4rem;
@@ -549,7 +557,7 @@ body {
     font-size: large;
 }
 
-.projDes > h1 {
+.projDes > h3 {
     font-weight: bold;
     color: var(--color);
 }
@@ -562,7 +570,7 @@ body {
     align-items: center;
     color: white;
     font-weight: bold;
-    font-size: large;
+    font-size: 1.2rem;
     justify-content: space-between;
     background-color: var(--footercolor);
     border-radius: 0px 0px 25px 25px;
@@ -575,13 +583,12 @@ body {
 }
 
 .container9 {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 .softwares {
@@ -772,7 +779,7 @@ body {
 @keyframes fade {
     from {
         opacity: 0.4;
-        transform: translateX(-100%);
+        transform: translateY(100%);
     }
     to {
         opacity: 1;
@@ -927,7 +934,7 @@ body {
     }
 
     .projCard {
-        width: 80%;
+        width: 95%;
         font-size: small;
     }
    
@@ -949,11 +956,11 @@ body {
     }
     .galNext {
         left: 93%;
-        width: 5%;
+        width: 7%;
         font-size: 2rem;
     }
     .galPrev {
-        width: 5%;
+        width: 7%;
         font-size: 2rem;
     }
 
@@ -991,6 +998,7 @@ body {
     .skillCard {
         min-width: 300px;
         font-size: 1rem;
+        margin-bottom: 4%;
     }
 
     .container12Icons {
@@ -1005,6 +1013,13 @@ body {
         width: 96%;
         margin-left: 2%;
     }
+    .htmlHeader {
+        margin-top: 13%;
+    }
+
+    .projDes > p {
+        font-size: 1.2rem;
+    }
 }
 
 @media all and (min-width: 1001px) and (max-width: 1450px) { 
@@ -1015,9 +1030,11 @@ body {
         flex-wrap: wrap;
     }
     .projCard {
-        width: 40%;
+        width: 45%;
     }
 }
+
+
 
 
 

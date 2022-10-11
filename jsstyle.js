@@ -25,7 +25,6 @@ menuBar.addEventListener("click", () => {
     else {
         menuBar.children[0].classList.value = "fa fa-times fa-2x";
     }
-    console.log( menuBar.children[0].classList);
     navList.classList.toggle("active");
 });
 
@@ -36,11 +35,15 @@ function loadLoader() {
     var navBar = document.querySelector(".homeNavbar");
     var homenavitem = document.querySelector(".homeNavbar").querySelector(".navList").querySelectorAll(".homeNavItem");
     var bar = document.querySelector(".homeNavbar").querySelector(".bar").querySelector(".barstyle");
+    var bar2 = document.querySelector(".homeNavbar").querySelector(".bar").querySelector(".fa-times");
 
     navBar.classList.toggle("whiten", window.scrollY > 0);
     homenavitem.forEach(black);
     if (bar!= null) {
         bar.classList.toggle("black", window.scrollY > 0);
+    }
+    if (bar2!= null) {
+        bar2.classList.toggle("black", window.scrollY > 0);
     }
     //gives more smooth transition than (if (window.scrollY) > 0)
     //first code would execute once based on the statement, second code would execute multiple times everytime scrolled
