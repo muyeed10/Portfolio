@@ -199,12 +199,12 @@ body {
     background-color: white;
     box-shadow: 0 4px 10px #efefef;
     padding: 2%;
-    transition: all 2s;
+    transition: all 0.5s ease-in-out;
 }
 .card:hover,
 .card:focus {
     box-shadow: 0 4px 10px red;
-    transform: scale(1.1);
+    transform: translateY(-1.5%);
 }
 .greetings {
     font-size: 3.5rem;
@@ -347,7 +347,40 @@ body {
     color: white;
 }
 
+.container8 {
+    width: 80%;
+    margin-left: 10%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px #efefef;
+    border-radius: 15px;
+    padding: 2%;
+}
 
+.homeMiniCards {
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: wrap;
+}
+
+.miniCards{
+    min-width: 250px;
+    min-height: 20rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 10px #efefef;
+    border: 1px solid #efefef;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 2%;
+}
+
+.miniCards:hover {
+    color: white;
+    background-color: rgb(78, 157, 248);
+}
 
 /********************************skills page below****************************************/
 .container6 {
@@ -525,7 +558,6 @@ body {
     --footercolor: blue;
 }
 
-
 .projCard {
     position: relative;
     width: 30%;
@@ -541,6 +573,13 @@ body {
 .projCard:hover{
     box-shadow: 0 4px 10px var(--color);
     transform: scale(1.02);
+}
+
+.container3-image {
+    background-image: url("homepic2.jpg");
+    background-position: center;
+    width: 100;
+    outline: 1px solid red;
 }
 
 .container3-image > img {
@@ -711,8 +750,13 @@ body {
 .contactForm > input[type=text] {
     width: 100%;
     padding: .5rem;
-    border-radius: 10px;
-    border: 1px solid grey;
+    border: none;
+    border-bottom: 1px solid rgb(122, 122, 122);
+}
+
+.contactForm > input[type=text]:focus  {
+    border:none;
+    border-bottom: 1px solid rgb(122, 122, 122);
 }
 
 #Inquiries {
@@ -727,7 +771,7 @@ body {
     padding: .5rem;
     border-radius: 10px;
     color: white;
-    background-color: green;
+    background-image: linear-gradient(to left, #1a9df0, #008cfb, #007aff, #0063ff, #3244ff);
 }
 
 .contactList {
@@ -1022,6 +1066,19 @@ body {
 
     .projDes > p {
         font-size: 1.2rem;
+    }
+
+    .container8 {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+    .homeMiniCards {
+        justify-content: flex-start;
+    }
+    .miniCards{
+        min-width: 200px;
+        min-height: 18rem;
+        margin-bottom: 5%;
     }
 }
 
