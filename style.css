@@ -44,12 +44,12 @@ body {
 }
 
 .bodyHeader {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     text-transform: capitalize;
     color: white;
     text-align: center;
-    animation: appear 5s ease-in-out;
+    animation: appear 3s ease-in-out;
 }
 
 .container4 {
@@ -510,7 +510,7 @@ body {
     background-color: var(--skillCardColor);
     color: white;
 }
-.skillCard > h3 {
+.skillCard > h4 {
     font-weight: bold;
 }
 
@@ -639,7 +639,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 25px;
+    border-radius: 5px;
     z-index: 1;
 }
 
@@ -687,16 +687,21 @@ body {
 
 .galPic {
     width: 100%;
+    height: 100vh;
     object-fit: cover;
-    object-position: left;
+    object-position: center;
     display: none;
-    transition: 2s;
+    transition: 2s ease-in-out;
 }
 
+.galContainer {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
 .galActive {
-    display: flex;
+    display: block;
 }
-
 .galNext {
     position: absolute; 
     top: 45%;
@@ -992,14 +997,21 @@ body {
     .galPic {
         position: absolute;
         width: 100%;
-        top: 30%;
+        height: 100%
     }
     .gallerybody {
         width: 100%;
         height: 100vh;
+        display: flex;
+        align-items: center;
         background-color: black;
         position: relative;
         overflow: hidden;
+    }
+
+    .galContainer {
+        position: relative;
+        height: 40vh;
     }
     .galNext {
         left: 93%;
