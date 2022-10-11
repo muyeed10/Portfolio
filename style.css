@@ -953,6 +953,7 @@ body {
         height: 100vh;
         background-color: black;
         position: relative;
+        overflow: hidden;
     }
     .galNext {
         left: 93%;
