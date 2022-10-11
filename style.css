@@ -415,13 +415,13 @@ body {
 [data-value="C"] {
     --width: calc(100% - var(--skilltag-width) - 30% + 10%);
 }
+[data-value="React"] {
+    --width: calc(100% - var(--skilltag-width) - 50% + 10%);
+}
 [data-value="VB"] {
     --width: calc(100% - var(--skilltag-width) - 50% + 10%);
 }
 [data-value="Node"] {
-    --width: calc(100% - var(--skilltag-width) - 75% + 10%);
-}
-[data-value="React"] {
     --width: calc(100% - var(--skilltag-width) - 75% + 10%);
 }
 [data-value="Express"] {
@@ -669,6 +669,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 .galPrev {
@@ -683,6 +684,7 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     cursor: pointer;
+    z-index: 2;
 }
 
 .galNext:hover,
