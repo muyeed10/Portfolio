@@ -379,7 +379,7 @@ body {
 
 .miniCards:hover {
     color: black;
-    background-image: linear-gradient(to top, #4382e1, #879ee8, #b6bcef, #dddcf7, #ffffff);
+    background-image: linear-gradient(to bottom, #0063f8, #3d7ef8, #8290ac, #a5aebd, #c8d8f0);
 }
 
 /********************************skills page below****************************************/
