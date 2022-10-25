@@ -366,7 +366,7 @@ body {
 .miniCards{
     min-width: 250px;
     min-height: 20rem;
-    background-image: linear-gradient(to bottom, #1a5dc4, #4e7cd1, #769add, #9eb9e7, #c8d8f0);
+    background-image: linear-gradient(to right top, #051937, #004c6c, #008389, #52ba8c, #cbe989);
     box-shadow: 0 4px 10px #efefef;
     color: white;
     border: 1px solid #efefef;
@@ -379,8 +379,7 @@ body {
 
 .miniCards:hover {
     color: black;
-    background-image: linear-gradient(to bottom, #0063f8, #3d7ef8, #8290ac, #a5aebd, #c8d8f0);
-}
+    background-image: linear-gradient(to right top, #3683f8, #a567e1, #de40b2, #f61b74, #f03232);}
 
 /********************************skills page below****************************************/
 .container6 {
@@ -785,8 +784,8 @@ body {
     width: 80%;
     margin-left: 10%;
     padding: 1rem;
-    
 }
+
 .contactList > ul{
     list-style: none;
     display: flex;
@@ -796,6 +795,11 @@ body {
 
 .contactList > ul > li{
     padding: 1%;
+    font-size: 3rem;
+    cursor: pointer;
+}
+.contactList > ul > li > a{
+    color: black;
 }
 
 .contactList > ul > li:hover {
@@ -1107,6 +1111,24 @@ body {
     .container3-image {
         object-fit:fill;
         height: 15rem;
+    }
+
+    .contactForm {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .contactList{
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .contactList > ul {
+        gap: 3rem;
+    }
+
+    .contactList > ul > li {
+        font-size: 2rem;
     }
 }
 
