@@ -441,13 +441,13 @@ body {
 [data-value="JS"] {
     --width: calc(100% - var(--skilltag-width) - 20% + 10%);
 }
+[data-value="React"] {
+    --width: calc(100% - var(--skilltag-width) - 20% + 10%);
+}
 [data-value="Java"] {
     --width: calc(100% - var(--skilltag-width) - 25% + 10%);
 }
 [data-value="C"] {
-    --width: calc(100% - var(--skilltag-width) - 30% + 10%);
-}
-[data-value="React"] {
     --width: calc(100% - var(--skilltag-width) - 50% + 10%);
 }
 [data-value="VB"] {
