@@ -1,38 +1,357 @@
-.App {
-  text-align: center;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-snap-type: y mandatory;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #ffffff, #f0fbf2);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+
+.navbar-container {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  border-bottom: 2px solid rgb(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  padding: 0.9%;
+  z-index: 5;
+}
+
+.navbar-content nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 4%;
+  margin-right: 4%;
+  transition: all 0.5s ease-in;
+}
+
+.navbar-content nav h1 {
+  font-size: 1.5rem;
+}
+
+.navbar-content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.3rem;
+  transform: translateX(-30%);
+}
+
+.navbar-content ul li {
+  font-size: 1.3rem;
+  color: rgb(34 197 94);
+  cursor: pointer;
+  padding: 1% 4% 1% 4%;
+  border-radius: 25px;
+}
+
+.navbar-content ul li:hover {
+  background-color: rgb(34 197 94);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-container {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 2%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.aboutMe-container {
+  width: 100%;
+  border: none;
+  padding: 5%;
+}
+
+.aboutMe {
+  display: flex;
+  gap: 2rem;
+  width: 70%;
+}
+
+.aboutMe article {
+  width: 50%;
+}
+
+.imageContainer {
+  width: 50%;
+  height: 55vh;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.aboutMe article h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(34 197 94);
+  margin-bottom: 2%;
+}
+
+.aboutMe article h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2%;
+}
+
+.skills-container {
+  width: 100%;
+  border: none;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills-container h1 {
+  font-size: 2rem;
+  color: rgb(34 197 94);
+  font-weight: bold;
+  text-align: center;
+}
+
+.skills-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.skills-section {
+  display: flex;
+  width: 80%;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skills-box {
+  width: 30%;
+  background-color: white;
+  height: auto;
+  border-radius: 25px;
+  padding: 1.5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  outline: 2px solid rgb(34 197 94);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skills-box h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(34 197 94);
+}
+
+.skills-mini {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2%;
+}
+
+.skills-mini div {
+
+  flex-shrink: 0;
+  font-size: 1.2rem ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(120 113 108);
+  padding: 2%;
+  border: 1px solid rgb(0,0,0,0.2);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.skills-mini div:hover {
+  background-color: rgb(34, 197, 94, 0.5);
+}
+
+
+
+@media (min-width: 100px) and (max-width: 900px) {
+
+  .navbar-content ul {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar-container {
+    padding: 3%;
   }
+
+  .navbar-content nav {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  .navbar-content nav h1 {
+    font-size: 1.4rem;
+  }
+
+  .aboutMe-container {
+    padding: 5%;
+    margin-bottom: 5%;
+  }
+
+  .aboutMe {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: 100%;
+  }
+
+  .aboutMe article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skills-container {
+    margin-bottom: 5%;
+  }
+
+  .skills-section {
+    width: 100%;
+  }
+
+  .skills-box {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .skills-box h1 {
+    margin-bottom: 3%;
+  }
+  
+  .skills-mini {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: 40vh;
+  }
+
+  .skills-mini div {
+    width: 49%;
+  }
+
+  .aboutMe article h1 {
+    font-size: 1.4rem;
+  }
+
+  .aboutMe article h2 {
+    font-size: 1.2rem;
+  }
+  .aboutMe article p {
+    font-size: 1rem;
+  }
+
+  .skills-container .skills-box h1 {
+    font-size: 1.2rem;
+  }
+  .skills-container h1{
+    font-size: 1.4rem;
+  }
+
+  .skills-container h2{
+    font-size: 1.2rem;
+  }
+
+  .skills-mini div h3 {
+    font-size: 1rem;
+  }
+
+  .skills-mini div i {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media (min-width: 901px) and (max-width: 1350px) {
+
+  .skills-box {
+    width: 30%;
+    height: 65vh;
+  }
+
+  .skills-box h1 {
+    font-size: 1.2rem;
+  }
+
+  .skills-mini {
+    justify-content: flex-start;
+    padding: 2%;
+  }
+
+  .skills-mini div {
+    width: 49%;
+    padding: 1%;
+  }
+
+  .skills-mini div h3 {
+    font-size: 1rem;
+  }
+
+  .skills-mini div i {
+    font-size: 1.5rem;
+  }
+
+  .aboutMe-container {
+    padding: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .aboutMe {
+    width: 85%;
+    height: 75vh;
+  }
+
+  .imageContainer {
+    width: 50%;
+    height: 100%;
+  }
+
+  .aboutMe article {
+    width: 50%;
+  }
+
+  .skills-section {
+    width: 100%;
+    display: flex;
+  }
+
 }
