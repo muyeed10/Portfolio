@@ -96,7 +96,7 @@ body {
 
 .imageContainer {
   width: 50%;
-  height: 55vh;
+  height: inherit;
 }
 
 .imageContainer img {
@@ -199,6 +199,59 @@ body {
 }
 
 
+.project-box {
+  display: flex;
+  width: 75%;
+  border-radius: 25px;
+  background-color: white;
+  padding: 1.5%;
+  border: 2px solid rgb(0,0,0,0.1);
+  box-shadow: 0 0 10px rgba(0,0,0,.09);
+  margin-bottom: 2%;
+}
+
+.project-box .projectGallery {
+  width: 60%;
+  height: inherit;
+}
+
+.projectGallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.project-box .projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+  width: 40%;
+  gap: 2rem;
+}
+
+.projectContent h1 {
+  font-size: 1.5rem;
+}
+.projectContent p {
+  font-size: 1.1rem;
+}
+
+.project-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.project-footer span {
+  background-color: rgb(34, 197, 94,0.7);
+  padding: 2%;
+  border-radius: 10px;
+}
+
 
 @media (min-width: 100px) and (max-width: 900px) {
 
@@ -297,6 +350,19 @@ body {
     font-size: 1.5rem;
   }
 
+  .project-box {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-box .projectGallery {
+    width: 100%;
+    order: 1;
+  }
+  .project-box .projectContent {
+    width: 100%;
+    order: 2;
+  }
 }
 
 
@@ -304,7 +370,7 @@ body {
 
   .skills-box {
     width: 30%;
-    height: 65vh;
+    height: auto;
   }
 
   .skills-box h1 {
@@ -317,7 +383,7 @@ body {
   }
 
   .skills-mini div {
-    width: 49%;
+    width: 100%;
     padding: 1%;
   }
 
@@ -336,13 +402,11 @@ body {
   }
 
   .aboutMe {
-    width: 85%;
-    height: 75vh;
+    width: 90%;
   }
 
   .imageContainer {
     width: 50%;
-    height: 100%;
   }
 
   .aboutMe article {
@@ -352,6 +416,23 @@ body {
   .skills-section {
     width: 100%;
     display: flex;
+  }
+
+  .project-box {
+    width: 85%;
+    padding: 1%;
+  }
+
+  .projectContent h1 {
+    font-size: 1.3rem;
+  }
+
+  .projectContent p {
+    font-size: 1rem;
+  }
+
+  .projectContent .project-footer span {
+    font-size: 0.9rem;
   }
 
 }
