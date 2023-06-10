@@ -12,34 +12,33 @@ const Projects = () => {
     const projectsArr = [
         {
             name: 'Vinto',
-            description: 'Vinto is a visually appealing picture sharing social media app. Users can create account which are authenticated and authorized by firebase services, and information stored in MongoDB servers.' +
-            'Many features such as post-sharing, explore page, gallery organizers, user follow are all implemented and tested.',
+            description: 'Vinto is a visually appealing picture sharing social media app. Users can create account which are authenticated and authorized by firebase services, while MongoDB servers are used simultaneously with firebase cloud storage' +
+            ' to store user data. Many features such as post-sharing, explore page, album/collection feature, user follow, are all implemented.',
             tools: ['React', 'CSS', 'Tailwind', 'Firebase', 'MongoDB', 'Node'],
             images: [test1],
             Links: ['github link', 'demo link']
         },
         {
-            name: 'Species Catalogue',
-            description: 'A model driven app designed to record data of different plant species. Auth required to ensure only admin can access the app dashboard and add/edit/delete the data records.' +
+            name: 'Species Catalog',
+            description: 'A model driven app designed to record data of different plant species. Auth implemented to ensure only admin can access the app dashboard and add/edit/delete the data records.' +
             ' A public route/page is also provided for the client and the public to view different pictures and information of the species in a very friendly gallery-show manner',
             tools: ['React', 'CSS', 'Tailwind', 'Firebase', 'MongoDB', 'Node'],
             images: [test1],
             Links: ['github link', 'demo link']
-        },
+        }, 
         {
-            name: 'Framework website',
-            description: 'Created an attractive, dynamic, and responsive website using semantic UI and CSS with Django to change between pages. Website is a guide for users to learn and use the front-end framework and' 
-            + 'back-end framework. Also created an email sending feature as a demo using Django built in functionality. Hosted the website using Heroku.',
-            tools: ['HTML', 'CSS', 'Django', 'Semantic UI', 'BootStrap'],
+            name: 'Dublo',
+            description: "Twitter/reddit-like social media app where user's can login and use this platform to share their thoughts." 
+            + "Features include: authentication and authorization, post creation, interacting with other user's post by liking or commenting, etc.",
+            tools: ['React', 'CSS', 'Firebase', 'MongoDB', 'Node'],
             images: [test1],
             Links: ['github link', 'demo link']
         },
         {
-            name: 'Bingo Game',
-            description: 'Led a team of 2 to build a Bingo Game final project that displays a bingo card and checks numbers off each time a random number called exists on the' 
-            + 'card. Displays the winner when a number in a line is crossed out. Programmed in C, using Structs, Linked Lists, Arrays, Matrix, and stacks to develop an algorithm for functionality. Tho it does look simple,'
-            +'it took about 500+ lines of code even after refactoring to match the final requirements.',
-            tools: ['UNIX', 'LINUX', 'C'],
+            name: 'Network Switch Data Analyzer',
+            description: 'Created a CLI format app using python OOP to automate tasks and acquire critical data for business project management.' 
+            + ' Leveraged paramiko, and netmiko python libraries by automating ssh connections and running CLI commands in cisco/aruba network devices. Regex used to filter output and provide data summary.',
+            tools: ['Python', 'Netmiko', 'Paramiko', 'Regex'],
             images: [test1],
             Links: ['github link', 'demo link']
         }
