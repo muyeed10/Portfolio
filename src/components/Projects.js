@@ -12,9 +12,10 @@ const Projects = () => {
     const projectsArr = [
         {
             name: 'Vinto',
-            description: 'Vinto is a visually appealing picture sharing social media app. Users can create account which are authenticated and authorized by firebase services, while MongoDB servers are used simultaneously with firebase cloud storage' +
-            ' to store user data. Many features such as post-sharing, explore page, album/collection feature, user follow, are all implemented.',
-            tools: ['React', 'CSS', 'Tailwind', 'Firebase', 'MongoDB', 'Node'],
+            description: 'Vinto is a picture sharing app with a meticulously crafted user interface and captivating aesthetics, tailor-made for photo enthusiasts and visual storytellers' +
+            ' to store user data. Normal social media app features are all implemented alongside album/collection, image filters, and other image related features.' +
+            ' MongoDB and firebase cloud storage are used simulatenously to store data',
+            tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
             images: [test1],
             Links: ['github link', 'demo link']
         },
@@ -22,7 +23,7 @@ const Projects = () => {
             name: 'Species Catalog',
             description: 'A model driven app designed to record data of different plant species. Auth implemented to ensure only admin can access the app dashboard and add/edit/delete the data records.' +
             ' A public route/page is also provided for the client and the public to view different pictures and information of the species in a very friendly gallery-show manner',
-            tools: ['React', 'CSS', 'Tailwind', 'Firebase', 'MongoDB', 'Node'],
+            tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
             images: [test1],
             Links: ['github link', 'demo link']
         }, 
@@ -55,8 +56,8 @@ const Projects = () => {
 
     return (
         <motion.div ref={ref} id="Projects" variants={{
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0 }
+            hidden: { opacity: 0 },
+            visible: { opacity: 1 }
         }}
             initial="hidden"
             animate={mainControls}
