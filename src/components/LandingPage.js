@@ -1,9 +1,29 @@
 import React from "react";
+import Lottie from "lottie-react"
+import robot from "../pics/robot-lottie.json"
 
 const LandingPage = () => {
+
+    const options = {
+        animationData: robot,
+    };
+
     return (
         <div id="Home" className="landing-container flex justify-center items-center">
-            <h1>Landing Page</h1>
+            <div className="landing-content">
+                <h1>Hi! I am</h1>
+                <h1>Muyeed Hossain</h1>
+                <p>Software Engineer || Developer</p>
+                <div className="mt-8">
+                    <a>About Me</a>
+                    <a>View Resume</a>
+                </div>
+            </div>
+            <div className="animation-container">
+                <Lottie
+                    animationData={robot}
+                />
+            </div>
         </div>
     )
 }

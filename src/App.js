@@ -6,6 +6,7 @@ import LandingTwo from './components/LandingTwo';
 import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import SkillSection from './components/SkillSection';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutMe />
       <SkillSection />
       <Projects />
+      <Contact />
       <Footer />
     </div>
   );

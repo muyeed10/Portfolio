@@ -1,5 +1,6 @@
 import React, { userRef, useEffect, useRef } from "react";
 import test1 from '../pics/test1.png'
+import pfp from '../pics/pfp.jpg'
 import { motion, useInView, useAnimation } from 'framer-motion'
 
 const AboutMe = () => {
@@ -19,17 +20,21 @@ const AboutMe = () => {
 
 
     return (
-        <motion.div ref = {ref} id="About" variants={{
+        <motion.div ref={ref} id="About" variants={{
             hidden: { opacity: 0 },
-            visible: { opacity: 1}
-            }}
+            visible: { opacity: 1 }
+        }}
             initial="hidden"
             animate={mainControls}
-            transition={{ duration: 1, delay: 0.25 }} 
+            transition={{ duration: 1, delay: 0.25 }}
             className="aboutMe-container border-b flex justify-center items-center">
             <div className="aboutMe">
                 <div className="imageContainer">
-                    <img src={test1} />
+                    <div className="z-0 absolute inset-0 bg-gradient-to-r from-green-300 to-green-200 shadow-lg transform -skew-y-6 -rotate-6 rounded-3xl">
+                    </div>
+                    <div className="z-1 absolute inset-0 bg-gradient-to-r from-green-500 to-green-300 shadow-lg transform -skew-y-2 -rotate-2 rounded-3xl">
+                    </div>
+                    <img src={pfp} />
                 </div>
                 <article>
                     <h1>About Me</h1>
@@ -39,7 +44,7 @@ const AboutMe = () => {
                         intuitive and visually appealing. I also emphasize the performance and reliability of the back-end, including efficient database designs, and employ caching strategies to enhance the
                         app's responsiveness, minimizing loading times and ensure a smooth user experience, regardless of the device or network conditions.
                         <br /><br />
-                        In addition I have also built many programs and apps using Python, Java, C. Having worked as a Network Engineer, 
+                        In addition I have also built many programs and apps using Python, Java, C. Having worked as a Network Engineer,
                         I possess in-depth knowledge of network protocols, security, and infrastructure design.
                     </p>
                 </article>

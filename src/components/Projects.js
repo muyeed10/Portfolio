@@ -1,4 +1,4 @@
-import React, { userRef, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from 'framer-motion'
 import ProjectBox from "./ProjectBox";
 import test1 from "../pics/test1.png"
@@ -70,6 +70,7 @@ const Projects = () => {
             {projectsArr.map((elem,index) => (
                 <ProjectBox elem={elem} index={index} key={index}/>
             ))}
+            
         </motion.div >
     )
 }
