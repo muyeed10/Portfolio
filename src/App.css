@@ -397,6 +397,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  color: black;
 }
 
 .contact-item {
@@ -410,7 +411,7 @@ footer {
   top: 0%;
   left: 0;
   width:100%;
-  z-index: 1;
+  z-index: 35;
   background-color: white;
   animation: slide-left 0.4s ease-in;
 }
@@ -446,7 +447,7 @@ footer {
   align-items: center;
   width: 40px;
   cursor: pointer;
- 
+  z-index: 40;
 }
 
 .navbar-icon span {
@@ -455,7 +456,7 @@ footer {
   height: 3px;
   margin-bottom: 10px;
   transition: transform 0.3s ease;
-  z-index: 10;
+  z-index: 40;
 }
 
 .navbar-icon.active span:nth-child(2) {
