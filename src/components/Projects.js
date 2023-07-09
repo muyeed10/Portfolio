@@ -1,7 +1,22 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from 'framer-motion'
 import ProjectBox from "./ProjectBox";
-import test1 from "../pics/test1.png"
+import catalogGallery from "../pics/catalog-gallery.png"
+import catalogAdminDashboard from "../pics/catalog-adminDashboard.png"
+import catalogcreateNew from "../pics/catalog-createNew.png"
+import cataloglongDes from "../pics/catalog-longDescription.png"
+import vintologin from "../pics/vinto-loginpage.png"
+import vintohome from "../pics/vinto-homepage.png"
+import vintoexplore from "../pics/vinto-explorepage.png"
+import vintocreate1 from "../pics/vinto-create1.png"
+import vintocreate2 from "../pics/vinto-create2.png"
+import dubloHomepage from "../pics/dublo-homepage.png"
+import dubloHomepage2 from "../pics/dublo-homepage2.png"
+import dubloHomepage3 from "../pics/dublo-homepage3.png"
+import dubloCreate from "../pics/dublo-create.png"
+import dubloAccountPage from "../pics/dublo-accountPage.png"
+import errorPic from "../pics/error.png"
+
 
 const Projects = () => {
 
@@ -13,26 +28,27 @@ const Projects = () => {
         {
             name: 'Vinto',
             description: 'Vinto is a picture sharing app with a meticulously crafted user interface and captivating aesthetics, tailor-made for photo enthusiasts and visual storytellers' +
-            ' to store user data. Normal social media app features are all implemented alongside album/collection, image filters, and other image related features.' +
+            ' to store user data. Basic social media app features are all implemented alongside album/collection, image filters, and other image related features.' +
             ' MongoDB and firebase cloud storage are used simulatenously to store data',
             tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
-            images: [test1],
+            images: [vintoexplore, vintohome, vintocreate1, vintocreate2, vintologin],
             Links: ['github link', 'demo link']
         },
         {
             name: 'Species Catalog',
-            description: 'A model driven app designed to record data of different plant species. Auth implemented to ensure only admin can access the app dashboard and add/edit/delete the data records.' +
+            description: 'A database management fullstack app designed to record data of different plant species. Auth implemented to ensure only admin can access the app dashboard and add/edit/delete the data records.' +
             ' A public route/page is also provided for the client and the public to view different pictures and information of the species in a very friendly gallery-show manner',
             tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
-            images: [test1],
+            images: [catalogGallery, catalogAdminDashboard, catalogcreateNew, cataloglongDes],
             Links: ['github link', 'demo link']
         }, 
         {
             name: 'Dublo',
             description: "Twitter/reddit-like social media app where user's can login and use this platform to share their thoughts." 
-            + "Features include: authentication and authorization, post creation, interacting with other user's post by liking or commenting, etc.",
-            tools: ['React', 'CSS', 'Firebase', 'MongoDB', 'Node'],
-            images: [test1],
+            + " Features include: authentication and authorization, post creation, following users, interacting with other user's post by upvoting/downvoting, commenting, etc."
+            + " Also includes real time notification feature implemented using socket.io.",
+            tools: ['React', 'CSS', 'Firebase', 'MongoDB', 'Node', 'Socket.io', 'Tailwind'],
+            images: [dubloHomepage, dubloHomepage2, dubloHomepage3, dubloAccountPage, dubloCreate],
             Links: ['github link', 'demo link']
         },
         {
@@ -40,7 +56,7 @@ const Projects = () => {
             description: 'Created a CLI format app using python OOP to automate tasks and acquire critical data for business project management.' 
             + ' Leveraged paramiko, and netmiko python libraries by automating ssh connections and running CLI commands in cisco/aruba network devices. Regex used to filter output and provide data summary.',
             tools: ['Python', 'Netmiko', 'Paramiko', 'Regex'],
-            images: [test1],
+            images: [errorPic],
             Links: ['github link', 'demo link']
         }
     ]

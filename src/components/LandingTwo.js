@@ -9,11 +9,11 @@ const LandingTwo = () => {
             </div>
             <div className="landing-icon">
                 <h1>30+</h1>
-                <p>Projects Completed</p>
+                <p>Software Projects Completed</p>
             </div>
             <div className="landing-icon">
-                <h1>30+</h1>
-                <p>Completed projects</p>
+                <h1>Multi-Skilled</h1>
+                <p>Problem Solver</p>
             </div>
         </div>
     )

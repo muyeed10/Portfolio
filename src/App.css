@@ -50,7 +50,7 @@ body {
   font-size: 1.5rem;
 }
 
-.navbar-content ul {
+.navbar-content .navClicks {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -59,7 +59,7 @@ body {
   transform: translateX(-30%);
 }
 
-.navbar-content ul li {
+.navbar-content .navClicks li {
   font-size: 1.3rem;
   color: rgb(34 197 94);
   cursor: pointer;
@@ -67,7 +67,7 @@ body {
   border-radius: 25px;
 }
 
-.navbar-content ul li:hover {
+.navbar-content .navClicks li:hover {
   background-color: rgb(34 197 94);
   color: white;
 }
@@ -132,7 +132,10 @@ body {
 .skills-container {
   width: 100%;
   border: none;
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+  padding-right: 5%;
+  padding-left: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,32 +213,46 @@ body {
 
 
 .project-box {
+  min-height: 60vh;
   display: flex;
   width: 75%;
   border-radius: 25px;
   background-color: white;
-  padding: 1.5%;
+  padding: 1%;
   border: 2px solid rgb(0,0,0,0.1);
   box-shadow: 0 0 10px rgba(0,0,0,.09);
   margin-bottom: 2%;
 }
 
 .project-box .projectGallery {
-  width: 60%;
+  width: 70%;
   height: inherit;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .projectGallery img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit:contain;
   border-radius: 25px;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: slide-left-left 0.5s ease-in;
+}
+
+.projectGallery [data-active] img {
+  opacity: 1;
+  animation: slide-left 0.5s ease-in;
 }
 
 .project-box .projectContent {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 2%;
   width: 40%;
   gap: 2rem;
@@ -298,6 +315,7 @@ footer {
   width: 100%;
   background-color: rgb(34, 197, 94,0.8);
   padding: 3%;
+  margin-top: 5%;
 }
 
 .footer-container {
@@ -358,6 +376,10 @@ footer {
   cursor: pointer;
 }
 
+.landing-content div a:hover {
+  background-color: rgb(0,0,255,0.7);
+}
+
 .animation-container {
   width: 50%;
   height: 100vh;
@@ -370,10 +392,143 @@ footer {
   width: 100%;
 }
 
+.contact-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.dropDownForm {
+  position: absolute;
+  height: 100vh;
+  top: 0%;
+  left: 0;
+  width:100%;
+  z-index: 1;
+  background-color: white;
+  animation: slide-left 0.4s ease-in;
+}
+
+.dropDownForm.inactive {
+  display: none;
+}
+
+.dropDownUL {
+  margin-top: 15%;
+  list-style: none;
+  padding: 0;
+  color: rgb(34 197 94);
+}
+
+.dropDownUL li {
+  text-align: center;
+  padding: 5%;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.dropDownUL li:hover {
+  background-color: rgb(0,0,0,.1);
+}
+
+/*Custom start hamburger/x icon*/
+.navbar-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  cursor: pointer;
+ 
+}
+
+.navbar-icon span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+  z-index: 10;
+}
+
+.navbar-icon.active span:nth-child(2) {
+  transform: rotate(45deg) translateX(2px) translateY(0);
+}
+
+.navbar-icon.active span:nth-child(3) {
+  transform: rotate(-45deg)
+}
+
+.navbar-icon.active span:nth-child(1) {
+  display: none;
+}
+
+.navbar-icon.active span:nth-child(2),
+.navbar-icon.active span:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.nextButton {
+  font-size: 3.5rem;
+  z-index: 2;
+  font-weight: bold;
+  color: rgb(0,0,0,.5);
+  position: absolute;
+  top:50%;
+  left:100%;
+  transform: translate(-100%, -50%);
+  cursor:pointer;
+  background: none;
+  border: none
+}
+
+.previousButton {
+  font-size: 3.5rem;
+  z-index: 2;
+  font-weight: bold;
+  color: rgb(0,0,0,.5);
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translate(0%, -50%);
+  cursor:pointer;
+  background: none;
+  border: none
+}
+
+.nextButton:hover, .previousButton:hover {
+  background-color: rgb(0,0,0,.2);
+  color: rgb(0,0,0,.8);
+}
+
+
+
 @media (min-width: 100px) and (max-width: 900px) {
 
-  .navbar-content ul {
+  .navbar-icon {
+    display: flex;
+    width: 60px;
+  }
+
+  .navbar-icon span {
+    width: 35px;
+    height: 4px;
+    margin-bottom: 6px;
+  }
+
+  .navbar-content .navClicks {
     display: none;
+  }
+
+  .dropDownUL {
+    display: block;
   }
 
   .navbar-container {
@@ -392,7 +547,6 @@ footer {
   .aboutMe-container {
     padding: 5%;
     margin-bottom: 5%;
-    outline: 1px solid rgb(0,0,0,0.1);
   }
 
   .aboutMe {
@@ -414,7 +568,6 @@ footer {
 
   .skills-container {
     margin-bottom: 5%;
-    border-bottom: 1px solid rgb(0,0,0,0.1);
   }
 
   .skills-section {
@@ -479,6 +632,9 @@ footer {
     width: 100%;
     order: 1;
   }
+  .project-box .projectGallery ul {
+    height: 25vh;
+  }
   .project-box .projectContent {
     width: 100%;
     order: 2;
@@ -500,10 +656,10 @@ footer {
     border-radius: 0px;
   }
   .landing-icon h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
   .landing-icon p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   
   .footer-container {
@@ -571,6 +727,26 @@ footer {
   .imageContainer img {
     width: 85%;
   }
+
+  .contact-container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  #Contact h2 {
+    margin-bottom: 10%;
+  }
+
+  .contact-item {
+    margin-top: 2%;
+  }
+
+  .nextButton, .previousButton{
+    font-size: 2.5rem;
+  }
+
 }
 
 
@@ -684,10 +860,23 @@ footer {
 }
 
 
-
-@keyframes typeAnimation {
-  100% {
-      left: 110%;
-      width: 0%;
+@keyframes slide-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
+
+@keyframes slide-left-left {
+  from {
+    transform: translateX(0%);
+    opacity:0.9;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+

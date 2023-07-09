@@ -15,8 +15,11 @@ const LandingPage = () => {
                 <h1>Muyeed Hossain</h1>
                 <p>Software Engineer || Developer</p>
                 <div className="mt-8">
-                    <a>About Me</a>
-                    <a>View Resume</a>
+                    <a onClick={() => {
+                        const targetSection = document.querySelector('.app-container').querySelector(`#About`)
+                        targetSection.scrollIntoView({ behavior: 'smooth' });
+                    }}>About Me</a>
+                    <a href="https://muyeed10.github.io/react-portfilio-code/Resume.pdf">View Resume</a>
                 </div>
             </div>
             <div className="animation-container">

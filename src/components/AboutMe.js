@@ -1,5 +1,4 @@
 import React, { userRef, useEffect, useRef } from "react";
-import test1 from '../pics/test1.png'
 import pfp from '../pics/pfp.jpg'
 import { motion, useInView, useAnimation } from 'framer-motion'
 
@@ -41,11 +40,18 @@ const AboutMe = () => {
                     <h2>Fullstack, Software || Network Engineer</h2>
                     <p className="text-stone-500">Hi, I am Muyeed. Third year CS student at TMU (formerly Ryerson). I am a passionate Computer Science major with expertise in a wide range of
                         technologies and programming languages. I have built numerous full stack applications, each project
-                        intuitive and visually appealing. I also emphasize the performance and reliability of the back-end, including efficient database designs, and employ caching strategies to enhance the
-                        app's responsiveness, minimizing loading times and ensure a smooth user experience, regardless of the device or network conditions.
+                        intuitive, visually appealing, and configured with strong network security controls. In addition I have also built many programs and apps using Python, Java, and C.
+                        I have worked on 30+ projects, but feel free to check out few of my notable projects in the&nbsp; 
+                        <a style={{color:'blue', textDecoration:'underline', cursor:'pointer'}}onClick={() => {
+                            const targetSection = document.querySelector('.app-container').querySelector(`#Projects`)
+                            targetSection.scrollIntoView({ behavior: 'smooth' });
+                        }}>Projects</a> section
                         <br /><br />
-                        In addition I have also built many programs and apps using Python, Java, C. Having worked as a Network Engineer,
-                        I possess in-depth knowledge of network protocols, security, and infrastructure design.
+                        Having worked as a Network Engineer, I also possess in-depth knowledge of network protocols,
+                        security, and infrastructure design as well as configuring and managing cisco, aruba and arista devices. I also have experience using
+                        Clearpass, AMP, Infoblox, SolarWinds, Palo Alto, etc.
+                        <br /><br />
+                        I am open to working in any postion to expand my skillset.
                     </p>
                 </article>
             </div>
