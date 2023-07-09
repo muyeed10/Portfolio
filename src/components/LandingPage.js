@@ -19,7 +19,7 @@ const LandingPage = () => {
                         const targetSection = document.querySelector('.app-container').querySelector(`#About`)
                         targetSection.scrollIntoView({ behavior: 'smooth' });
                     }}>About Me</a>
-                    <a href="https://muyeed10.github.io/react-portfilio-code/Resume.pdf">View Resume</a>
+                    <a href="http://muyeed10.github.io/Portfolio/Resume.pdf">View Resume</a>
                 </div>
             </div>
             <div className="animation-container">
