@@ -32,7 +32,7 @@ const Projects = () => {
             ' MongoDB and firebase cloud storage are used simulatenously to store data',
             tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
             images: [vintoexplore, vintohome, vintocreate1, vintocreate2, vintologin],
-            Links: ['github link', 'demo link']
+            Links: ['', '']
         },
         {
             name: 'Species Catalog',
@@ -40,7 +40,7 @@ const Projects = () => {
             ' A public route/page is also provided for the client and the public to view different pictures and information of the species in a very friendly gallery-show manner',
             tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
             images: [catalogGallery, catalogAdminDashboard, catalogcreateNew, cataloglongDes],
-            Links: ['github link', 'demo link']
+            Links: ['', '']
         }, 
         {
             name: 'Dublo',
@@ -49,7 +49,7 @@ const Projects = () => {
             + " Also includes real time notification feature implemented using socket.io.",
             tools: ['React', 'CSS', 'Firebase', 'MongoDB', 'Node', 'Socket.io', 'Tailwind'],
             images: [dubloHomepage, dubloHomepage2, dubloHomepage3, dubloAccountPage, dubloCreate],
-            Links: ['github link', 'demo link']
+            Links: ['', '']
         },
         {
             name: 'Network Switch Data Analyzer',
@@ -57,7 +57,7 @@ const Projects = () => {
             + ' Leveraged paramiko, and netmiko python libraries by automating ssh connections and running CLI commands in cisco/aruba network devices. Regex used to filter output and provide data summary.',
             tools: ['Python', 'Netmiko', 'Paramiko', 'Regex'],
             images: [errorPic],
-            Links: ['github link', 'demo link']
+            Links: ['', '']
         }
     ]
 

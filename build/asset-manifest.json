@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.bfdb19fa.css",
+    "main.js": "/Portfolio/static/js/main.73e312ad.js",
+    "static/media/catalog-gallery.png": "/Portfolio/static/media/catalog-gallery.4b021a032ab655e4aef0.png",
+    "static/media/vinto-explorepage.png": "/Portfolio/static/media/vinto-explorepage.3fc6722a786216e01dfe.png",
+    "static/media/dublo-accountPage.png": "/Portfolio/static/media/dublo-accountPage.abd1698fffcaf603a5ff.png",
+    "static/media/dublo-homepage.png": "/Portfolio/static/media/dublo-homepage.d9a74458274021672470.png",
+    "static/media/dublo-homepage3.png": "/Portfolio/static/media/dublo-homepage3.8e3e14d1101d4bd8c7bb.png",
+    "static/media/vinto-loginpage.png": "/Portfolio/static/media/vinto-loginpage.e03d012b5585a35a50f5.png",
+    "static/media/vinto-create2.png": "/Portfolio/static/media/vinto-create2.d61e0bbcd6533aca1152.png",
+    "static/media/vinto-homepage.png": "/Portfolio/static/media/vinto-homepage.47f233b9c43889553f32.png",
+    "static/media/catalog-longDescription.png": "/Portfolio/static/media/catalog-longDescription.eded66cbb08aa158ba8c.png",
+    "static/media/dublo-homepage2.png": "/Portfolio/static/media/dublo-homepage2.5cf98d3d4a54b0b3e0ef.png",
+    "static/media/error.png": "/Portfolio/static/media/error.5935b90a9c1dfbd15126.png",
+    "static/media/pfp.jpg": "/Portfolio/static/media/pfp.077dfe1cb4b3f06f7a85.jpg",
+    "static/media/catalog-adminDashboard.png": "/Portfolio/static/media/catalog-adminDashboard.297753e93d54ca2511d1.png",
+    "static/media/vinto-create1.png": "/Portfolio/static/media/vinto-create1.26452f0ee6363716201a.png",
+    "static/media/test2.jpg": "/Portfolio/static/media/test2.854092193739136e0e13.jpg",
+    "static/media/catalog-createNew.png": "/Portfolio/static/media/catalog-createNew.a80ac85c4c45a5910215.png",
+    "static/media/dublo-create.png": "/Portfolio/static/media/dublo-create.cfd2703958beb1c33d0b.png",
+    "index.html": "/Portfolio/index.html",
+    "main.bfdb19fa.css.map": "/Portfolio/static/css/main.bfdb19fa.css.map",
+    "main.73e312ad.js.map": "/Portfolio/static/js/main.73e312ad.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfdb19fa.css",
+    "static/js/main.73e312ad.js"
+  ]
+}

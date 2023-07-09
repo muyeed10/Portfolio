@@ -39,7 +39,7 @@ const SkillSection = () => {
                         <div><h3>CSS3</h3></div>
                         <div><h3>TailWind</h3></div>
                         <div><i className="fa-brands fa-bootstrap text-4xl mr-2 text-purple-500"></i><h3>BootStrap</h3></div>
-                        <div><h3>React Front-end UI libraries</h3></div>
+                        <div><h3>ASP.NET</h3></div>
                     </div>
                 </div>
 

@@ -1,3 +1,6 @@
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 const ProjectBox = ({ elem, index }) => {
 
     const pictureChange = (e) => {
@@ -23,11 +26,38 @@ const ProjectBox = ({ elem, index }) => {
             slideImages.children[index].dataset.active = true
             delete activeSlide.dataset.active
         }
-
-
     }
 
-
+    const handleLinkClick = (num) => {
+        if (num == 1) {
+            if (elem.Links[0] === '') {
+                toast.error("Link not available at the moment!! Please check again later", {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                    pauseOnHover: true,
+                    draggable: true,
+                    theme: "light",
+                    autoClose: 2000
+                })
+            }
+            else {
+                window.location.href = elem.Links[0]
+            }
+        }
+        else {
+            if (elem.Links[1] === '') {
+                toast.error("Link not available at the moment!! Please check again later", {
+                    position: toast.POSITION.BOTTOM_RIGHT,
+                    pauseOnHover: true,
+                    draggable: true,
+                    theme: "light",
+                    autoClose: 2000
+                })
+            }
+            else {
+                window.location.href = elem.Links[1]
+            }
+        }
+    }
 
     return (
         <div className="project-box">
@@ -63,10 +93,11 @@ const ProjectBox = ({ elem, index }) => {
                             ))}
                         </div>
                         <div className="flex justify-center gap-5">
-                            <a style={{ fontSize: '1.4rem', padding: '2%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-brands fa-github text-white-500 text-3xl mr-2"></i>Code</a>
-                            <a style={{ fontSize: '1.4rem', padding: '2%', paddingTop: '4%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer">Link</a>
+                            <a onClick={() => handleLinkClick('1')} style={{ fontSize: '1.4rem', padding: '2%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-brands fa-github text-white-500 text-3xl mr-2"></i>Code</a>
+                            <a onClick={() => handleLinkClick('2')} style={{ fontSize: '1.4rem', padding: '2%', paddingTop: '4%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer">Link</a>
                         </div>
                     </div>
+                    <ToastContainer />
                 </>
                 :
                 <>
@@ -104,6 +135,7 @@ const ProjectBox = ({ elem, index }) => {
                             </span>
                         </button>
                     </div>
+                    <ToastContainer />
                 </>
             }
         </div>
