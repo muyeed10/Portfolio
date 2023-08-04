@@ -26,7 +26,7 @@ const Projects = () => {
 
     const projectsArr = [
         {
-            name: 'Vinto',
+            name: 'Vinto (In Progess)',
             description: 'Vinto is a picture sharing app with a meticulously crafted user interface and captivating aesthetics, tailor-made for photo enthusiasts and visual storytellers' +
             ' to store user data. Basic social media app features are all implemented alongside album/collection, image filters, and other image related features.' +
             ' MongoDB and firebase cloud storage are used simulatenously to store data',
