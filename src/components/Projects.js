@@ -16,6 +16,8 @@ import dubloHomepage3 from "../pics/dublo-homepage3.png"
 import dubloCreate from "../pics/dublo-create.png"
 import dubloAccountPage from "../pics/dublo-accountPage.png"
 import errorPic from "../pics/error.png"
+import dentalDBMS1 from "../pics/dentalDBMS1.png"
+
 
 
 const Projects = () => {
@@ -57,6 +59,16 @@ const Projects = () => {
             + ' Leveraged paramiko, and netmiko python libraries by automating ssh connections and running CLI commands in cisco/aruba network devices. Regex used to filter output and provide data summary.',
             tools: ['Python', 'Netmiko', 'Paramiko', 'Regex'],
             images: [errorPic],
+            Links: ['', '']
+        },
+        {
+            name: 'Dental Clinic DBMS',
+            description: 'comprehensive database management solution tailored specifically for dental clinics. It provides a centralized platform to efficiently manage patient records, appointments, treatments,' 
+            + 'staff information, inventory, and financial transactions. '
+            + 'All the SQL commands were integrated in a Bash Program, which also serves as a command-line interface for users '
+            + 'to perform CRUD operations in Linux systems',
+            tools: ['SQL', 'Oracle', 'Bash', 'Linux'],
+            images: [dentalDBMS1],
             Links: ['', '']
         }
     ]
