@@ -17,7 +17,12 @@ import dubloCreate from "../pics/dublo-create.png"
 import dubloAccountPage from "../pics/dublo-accountPage.png"
 import errorPic from "../pics/error.png"
 import dentalDBMS1 from "../pics/dentalDBMS1.png"
-
+import tmuHomePage from "../pics/tmum-homepage.png"
+import tmuSearchPage from "../pics/tmum-searchPage.png"
+import tmuAdminDashboard from "../pics/tmum-adminDashboard.png"
+import tmuEditProfile from "../pics/tmum-editProfile.png"
+import tmuMyProfile from "../pics/tmum-myProfile.png"
+import tmuMyListings from "../pics/tmum-myListings.png"
 
 
 const Projects = () => {
@@ -27,6 +32,22 @@ const Projects = () => {
     const mainControls = useAnimation()
 
     const projectsArr = [
+        {
+            name: 'TMU MarketPlace',
+            description: 'TMU MarketPlace is an online platform created to facilitate buying and selling among TMU students, offering a responsive and user-friendly experience. ' + 
+            'The platform allows students to post listings, search for items, and connect with other users, providing a seamless marketplace environment similar to popular services like eBay or Kijiji',
+            tools: ['React', 'Node', 'PostgreSQL', 'Supabase', 'Firebase Auth', 'Tailwind'],
+            images: [tmuHomePage, tmuSearchPage, tmuMyProfile, tmuEditProfile, tmuMyListings, tmuAdminDashboard],
+            Links: ['https://github.com/eldossjogy/TMU-MarketPlace','https://tmu-marketplace.onrender.com/']
+        },
+        {
+            name: 'Soccer Dashboard (In Progess)',
+            description: 'The Soccer Dashboard is an interactive platform built using Power BI to provide detailed insights into teams and players in the soccer world. ' + 
+            'It allows users to explore various statistics and performance metrics, offering a clear and engaging view of trends across the sport.',
+            tools: ['Power BI', 'DAX', 'REST API'],
+            images: [errorPic],
+            Links: ['', '']
+        },
         {
             name: 'Vinto (In Progess)',
             description: 'Vinto is a picture sharing app with a meticulously crafted user interface and captivating aesthetics, tailor-made for photo enthusiasts and visual storytellers' +

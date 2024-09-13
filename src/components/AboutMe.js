@@ -37,21 +37,22 @@ const AboutMe = () => {
                 </div>
                 <article>
                     <h1>About Me</h1>
-                    <h2>Fullstack, Software || Network Engineer</h2>
-                    <p className="text-stone-500">Hi, I am Muyeed. Third year CS student at TMU (formerly Ryerson). I am a passionate Computer Science major with expertise in a wide range of
-                        technologies and programming languages. I have built numerous full stack applications, each project
-                        intuitive, visually appealing, and configured with strong network security controls. In addition I have also built many programs and apps using Python, Java, and C.
-                        I have worked on 30+ projects, but feel free to check out few of my notable projects in the&nbsp; 
+                    <h2>Fullstack, Software, Data Engineering</h2>
+                    <p className="text-stone-500">
+                    I’m Muyeed, a passionate software engineer specializing in software development, data, and machine learning, with over 24 months of co-op experience. 
+                    I have expertise in a wide range of technologies, from programming languages like Python, Java, and JavaScript to frameworks such as Spring Boot, React.js, 
+                    and Node.js. I also have hands-on experience with both relational and non-relational databases like MSSQL, PostgreSQL, and MongoDB, along with cloud technologies such 
+                    as Azure and Kubernetes. My background extends to data analysis and visualization using tools like Power BI, where I’ve worked with large datasets to 
+                    derive insights. I’m driven by solving complex problems and constantly improving my skill set to deliver impactful solutions.
+                    <br></br>
+                    <br></br>
+                    I have worked on 30+ projects, but feel free to check out few of my notable projects in the&nbsp; 
                         <a style={{color:'blue', textDecoration:'underline', cursor:'pointer'}}onClick={() => {
                             const targetSection = document.querySelector('.app-container').querySelector(`#Projects`)
                             targetSection.scrollIntoView({ behavior: 'smooth' });
-                        }}>Projects</a> section
+                        }}>Projects</a> section.
                         <br /><br />
-                        Having worked as a Network Engineer, I also possess in-depth knowledge of network protocols,
-                        security, and infrastructure design as well as configuring and managing cisco, aruba and arista devices. I also have experience using
-                        Clearpass, AMP, Infoblox, SolarWinds, Palo Alto, etc.
-                        <br /><br />
-                        I am open to working in any postion to expand my skillset.
+                        I am open to working in any postion in Software, Data or Cloud field.
                     </p>
                 </article>
             </div>

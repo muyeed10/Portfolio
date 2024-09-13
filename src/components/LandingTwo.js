@@ -12,8 +12,8 @@ const LandingTwo = () => {
                 <p>Software Projects Completed</p>
             </div>
             <div className="landing-icon">
-                <h1>Multi-Skilled</h1>
-                <p>Problem Solver</p>
+                <h1>2+ years</h1>
+                <p>Co-op Experience</p>
             </div>
         </div>
     )

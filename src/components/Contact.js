@@ -76,7 +76,7 @@ const Projects = () => {
                         </p>
                     </div>
                 </a>
-                <a className="flex items-start contact-item border border-transparent hover:border-green-500 p-3" href="http://muyeed10.github.io/Portfolio/Muyeed-Hossain-Resume.pdf">
+                <a className="flex items-start contact-item border border-transparent hover:border-green-500 p-3" href="http://muyeed10.github.io/Portfolio/Muyeed_Hossain_Resume.pdf">
                     <div className="shrink-0">
                         <div className="inline-block rounded-md">
                         <i className="fa-regular fa-file text-5xl"></i>

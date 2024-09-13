@@ -84,7 +84,7 @@ const ProjectBox = ({ elem, index }) => {
                     </div>
                     <div className="projectContent">
                         <div>
-                            <h1>{elem.name}</h1>
+                            <h1 className='mb-2'>{elem.name}</h1>
                             <p>{elem.description}</p>
                         </div>
                         <div className="project-footer">
@@ -93,8 +93,8 @@ const ProjectBox = ({ elem, index }) => {
                             ))}
                         </div>
                         <div className="flex justify-center gap-5">
-                            <a onClick={() => handleLinkClick('1')} style={{ fontSize: '1.4rem', padding: '2%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-brands fa-github text-white-500 text-3xl mr-2"></i>Code</a>
-                            <a onClick={() => handleLinkClick('2')} style={{ fontSize: '1.4rem', padding: '2%', paddingTop: '4%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer">Link</a>
+                            <a onClick={() => handleLinkClick('1')} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-brands fa-github text-white-500 text-3xl mr-2"></i>Code</a>
+                            <a onClick={() => handleLinkClick('2')} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-solid fa-link text-white-500 text-3xl mr-2"></i>Link</a>
                         </div>
                     </div>
                     <ToastContainer />
@@ -103,7 +103,7 @@ const ProjectBox = ({ elem, index }) => {
                 <>
                     <div className="projectContent">
                         <div>
-                            <h1>{elem.name}</h1>
+                            <h1 className='mb-2'>{elem.name}</h1>
                             <p>{elem.description}</p>
                         </div>
                         <div className="project-footer">
@@ -112,8 +112,8 @@ const ProjectBox = ({ elem, index }) => {
                             ))}
                         </div>
                         <div className="flex justify-center gap-5">
-                            <a onClick={() => handleLinkClick('1')} style={{ fontSize: '1.4rem', padding: '2%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-brands fa-github text-white-500 text-3xl mr-2"></i>Code</a>
-                            <a onClick={() => handleLinkClick('2')} style={{ fontSize: '1.4rem', padding: '2%', paddingTop: '4%' }} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer">Link</a>
+                            <a onClick={() => handleLinkClick('1')} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-brands fa-github text-white-500 text-3xl mr-2"></i>Code</a>
+                            <a onClick={() => handleLinkClick('2')} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded-lg text-sm cursor-pointer"><i className="fa-solid fa-link text-white-500 text-3xl mr-2"></i>Link</a>
                         </div>
                     </div>
                     <div className="projectGallery">

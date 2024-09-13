@@ -28,7 +28,7 @@ const SkillSection = () => {
 
             <h1>Skills</h1>
             <h2>My technical expertise</h2>
-
+{/*
             <div ref={ref} className="skills-section">
                 <div className="skills-box">
                     <h1>Front-end development</h1>
@@ -42,7 +42,6 @@ const SkillSection = () => {
                         <div><h3>ASP.NET</h3></div>
                     </div>
                 </div>
-
                 <div className="skills-box">
                     <h1>Back-end development</h1>
                     <div className="skills-mini">
@@ -67,7 +66,6 @@ const SkillSection = () => {
                         <div><h3>C#</h3></div>
                     </div>
                 </div>
-
                 <div className="skills-box">
                     <h1>Network Engineering</h1>
                     <div className="skills-mini">
@@ -80,7 +78,6 @@ const SkillSection = () => {
                         <div><h3>Cisco / Aruba</h3></div>
                     </div>
                 </div>
-
                 <div className="skills-box">
                     <h1>Cloud/Tools</h1>
                     <div className="skills-mini">
@@ -94,7 +91,49 @@ const SkillSection = () => {
                         <div><h3>Netmiko,Paramiko, Numpy</h3></div>
                     </div>
                 </div>
+            </div>
+*/}
 
+            <div ref={ref} className="skills-section">
+                <div className="skills-box">
+                    <h1>Languages</h1>
+                    <div className="skills-mini">
+                        <div><h3>Java</h3></div>
+                        <div><h3>Python</h3></div>
+                        <div><h3>JavaScript</h3></div>
+                        <div><h3>TypeScript</h3></div>
+                        <div><h3>Kotlin</h3></div>
+                        <div><h3>C</h3></div>
+                        <div><h3>SQL (MSSQL, Azure SQL)</h3></div>
+                        <div><h3>MongoDB</h3></div>
+                    </div>
+                </div>
+                <div className="skills-box">
+                    <h1>Frameworks / Libraries</h1>
+                    <div className="skills-mini">
+                        <div><h3>React</h3></div>
+                        <div><h3>Spring Boot</h3></div>
+                        <div><h3>Node</h3></div>
+                        <div><h3>Next.js 13</h3></div>
+                        <div><h3>Numpy</h3></div>
+                        <div><h3>Pandas</h3></div>
+                        <div><h3>Scikit-Learn</h3></div>
+                        <div><h3>Pytorch</h3></div>
+                    </div>
+                </div>
+                <div className="skills-box">
+                    <h1>Tools</h1>
+                    <div className="skills-mini">
+                        <div><h3>Azure</h3></div>
+                        <div><h3>Power BI</h3></div>
+                        <div><h3>BitBucket</h3></div>
+                        <div><h3>Jenkins</h3></div>
+                        <div><h3>Datadog</h3></div>
+                        <div><h3>Docker</h3></div>
+                        <div><h3>Kubernetes</h3></div>
+                        <div><h3>Kubernetes</h3></div>
+                    </div>
+                </div>
             </div>
         </motion.div>
     )

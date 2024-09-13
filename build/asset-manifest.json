@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.98d36173.css",
-    "main.js": "/Portfolio/static/js/main.0012e204.js",
+    "main.css": "/Portfolio/static/css/main.bad9bd2a.css",
+    "main.js": "/Portfolio/static/js/main.943c058f.js",
     "static/media/catalog-gallery.png": "/Portfolio/static/media/catalog-gallery.4b021a032ab655e4aef0.png",
     "static/media/vinto-explorepage.png": "/Portfolio/static/media/vinto-explorepage.3fc6722a786216e01dfe.png",
     "static/media/dublo-accountPage.png": "/Portfolio/static/media/dublo-accountPage.abd1698fffcaf603a5ff.png",
@@ -12,19 +12,26 @@
     "static/media/vinto-homepage.png": "/Portfolio/static/media/vinto-homepage.47f233b9c43889553f32.png",
     "static/media/catalog-longDescription.png": "/Portfolio/static/media/catalog-longDescription.eded66cbb08aa158ba8c.png",
     "static/media/dublo-homepage2.png": "/Portfolio/static/media/dublo-homepage2.5cf98d3d4a54b0b3e0ef.png",
+    "static/media/tmum-homepage.png": "/Portfolio/static/media/tmum-homepage.96e577c6443730a73e7b.png",
     "static/media/error.png": "/Portfolio/static/media/error.5935b90a9c1dfbd15126.png",
-    "static/media/pfp.jpg": "/Portfolio/static/media/pfp.077dfe1cb4b3f06f7a85.jpg",
+    "static/media/tmum-myProfile.png": "/Portfolio/static/media/tmum-myProfile.1cc11f81aebeb236c932.png",
+    "static/media/tmum-myListings.png": "/Portfolio/static/media/tmum-myListings.c2fb07cbaa27f00d2755.png",
+    "static/media/dentalDBMS1.png": "/Portfolio/static/media/dentalDBMS1.1b7066531afc862d14ca.png",
+    "static/media/tmum-adminDashboard.png": "/Portfolio/static/media/tmum-adminDashboard.1423480422651dfe72d5.png",
+    "static/media/pfp.jpg": "/Portfolio/static/media/pfp.90fce74a127c3caca5f0.jpg",
+    "static/media/tmum-searchPage.png": "/Portfolio/static/media/tmum-searchPage.c79028647694da2c35b7.png",
     "static/media/catalog-adminDashboard.png": "/Portfolio/static/media/catalog-adminDashboard.297753e93d54ca2511d1.png",
     "static/media/vinto-create1.png": "/Portfolio/static/media/vinto-create1.26452f0ee6363716201a.png",
     "static/media/test2.jpg": "/Portfolio/static/media/test2.854092193739136e0e13.jpg",
+    "static/media/tmum-editProfile.png": "/Portfolio/static/media/tmum-editProfile.bd8416562970caa6886a.png",
     "static/media/catalog-createNew.png": "/Portfolio/static/media/catalog-createNew.a80ac85c4c45a5910215.png",
     "static/media/dublo-create.png": "/Portfolio/static/media/dublo-create.cfd2703958beb1c33d0b.png",
     "index.html": "/Portfolio/index.html",
-    "main.98d36173.css.map": "/Portfolio/static/css/main.98d36173.css.map",
-    "main.0012e204.js.map": "/Portfolio/static/js/main.0012e204.js.map"
+    "main.bad9bd2a.css.map": "/Portfolio/static/css/main.bad9bd2a.css.map",
+    "main.943c058f.js.map": "/Portfolio/static/js/main.943c058f.js.map"
   },
   "entrypoints": [
-    "static/css/main.98d36173.css",
-    "static/js/main.0012e204.js"
+    "static/css/main.bad9bd2a.css",
+    "static/js/main.943c058f.js"
   ]
 }
