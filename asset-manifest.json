@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.98d36173.css",
-    "main.js": "/Portfolio/static/js/main.ab1d0397.js",
+    "main.js": "/Portfolio/static/js/main.3e3033b5.js",
     "static/media/catalog-gallery.png": "/Portfolio/static/media/catalog-gallery.4b021a032ab655e4aef0.png",
     "static/media/vinto-explorepage.png": "/Portfolio/static/media/vinto-explorepage.3fc6722a786216e01dfe.png",
     "static/media/dublo-accountPage.png": "/Portfolio/static/media/dublo-accountPage.abd1698fffcaf603a5ff.png",
@@ -28,10 +28,10 @@
     "static/media/dublo-create.png": "/Portfolio/static/media/dublo-create.cfd2703958beb1c33d0b.png",
     "index.html": "/Portfolio/index.html",
     "main.98d36173.css.map": "/Portfolio/static/css/main.98d36173.css.map",
-    "main.ab1d0397.js.map": "/Portfolio/static/js/main.ab1d0397.js.map"
+    "main.3e3033b5.js.map": "/Portfolio/static/js/main.3e3033b5.js.map"
   },
   "entrypoints": [
     "static/css/main.98d36173.css",
-    "static/js/main.ab1d0397.js"
+    "static/js/main.3e3033b5.js"
   ]
 }
