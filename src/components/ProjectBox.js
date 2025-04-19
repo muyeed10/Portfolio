@@ -3,7 +3,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const ProjectBox = ({ elem, index }) => {
 
-    const pictureChange = (e) => {
+    const pictureChange = (e, dir) => {
         const currentElem = e.currentTarget
         let direction = e.currentTarget.dataset.direction
 
@@ -69,13 +69,13 @@ const ProjectBox = ({ elem, index }) => {
                                 index === 0 ? <li data-active><img src={image}></img></li> : <li><img src={image}></img></li>
                             ))}
                         </ul>
-                        <button type="button" className="absolute top-0 left-0 z-15 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={pictureChange} data-direction='prev'>
+                        <button type="button" className="absolute top-0 left-0 z-15 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={(e) => pictureChange(e, "left")} data-direction='prev'>
                             <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                                 <svg aria-hidden="true" className="w-6 h-6 text-black dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path></svg>
                                 <span className="sr-only">Previous</span>
                             </span>
                         </button>
-                        <button type="button" className="absolute top-0 right-0 z-15 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={pictureChange} data-direction='next'>
+                        <button type="button" className="absolute top-0 right-0 z-15 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" onClick={(e) => pictureChange(e, "right")} data-direction='next'>
                             <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
                                 <svg aria-hidden="true" className="w-6 h-6 text-black dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
                                 <span className="sr-only">Next</span>
