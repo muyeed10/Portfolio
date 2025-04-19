@@ -39,11 +39,16 @@ const AboutMe = () => {
                     <h1>About Me</h1>
                     <h2>Software || Data Engineer</h2>
                     <p className="text-stone-500">
-                    I’m Muyeed, a passionate software engineer specializing in software development, data, and machine learning, with over 24 months of co-op experience. 
-                    I have expertise in a wide range of technologies, from programming languages like Python, Java, and JavaScript to frameworks such as Spring Boot, React.js, 
-                    and Node.js. I also have hands-on experience with both relational and non-relational databases like MSSQL, PostgreSQL, and MongoDB, along with cloud technologies such 
-                    as Azure and Kubernetes. My background extends to data analysis and visualization using tools like Power BI, where I’ve worked with large datasets to 
-                    derive insights. I’m driven by solving complex problems and constantly improving my skill set to deliver impactful solutions.
+                    ’m Muyeed, a passionate software engineer specializing in software development, data, and machine learning, with over 24 months of co-op experience. 
+                    I have expertise in a wide range of technologies, from programming languages like Python, Java, and JavaScript to frameworks such as Spring Boot, 
+                    React.js, and Node.js. I also have hands-on experience with both relational and non-relational databases like MSSQL, PostgreSQL, and MongoDB, along 
+                    with cloud technologies such as Azure and Kubernetes.
+                    <br></br><br></br>
+                    I’ve worked on various machine learning tasks, including classification, regression, and clustering, and have implemented data preprocessing, 
+                    feature engineering, and model optimization techniques. My background extends to data analysis and visualization using tools like Power BI, 
+                    where I’ve worked with large datasets to derive actionable insights.
+                    <br></br><br></br>
+                    I’m driven by solving complex problems and constantly improving my skill set to deliver impactful solutions.
                     <br></br>
                     <br></br>
                     I have worked on 30+ projects, but feel free to check out few of my notable projects in the&nbsp; 

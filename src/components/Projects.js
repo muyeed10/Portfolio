@@ -41,10 +41,10 @@ const Projects = () => {
             Links: ['https://github.com/eldossjogy/TMU-MarketPlace','https://tmu-marketplace.onrender.com/']
         },
         {
-            name: 'Soccer Dashboard (In Progess)',
-            description: 'The Soccer Dashboard is an interactive platform built using Power BI to provide detailed insights into teams and players in the soccer world. ' + 
-            'It allows users to explore various statistics and performance metrics, offering a clear and engaging view of trends across the sport.',
-            tools: ['Power BI', 'DAX', 'REST API'],
+            name: 'Soccer Dashboard',
+            description: 'The Soccer Dashboard is an interactive Power BI platform that offers insights into soccer teams and players, displaying key stats and performance metrics. ' + 
+            'It also includes an ML model for predicting player and team performance using regression, classification, and clustering algorithms. ',
+            tools: ['Power BI', 'DAX', 'REST API', 'Machine Learning', 'Python'],
             images: [errorPic],
             Links: ['', '']
         },
