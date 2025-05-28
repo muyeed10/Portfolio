@@ -39,7 +39,7 @@ const AboutMe = () => {
                     <h1>About Me</h1>
                     <h2>Software || Data Engineer</h2>
                     <p className="text-stone-500">
-                    ’m Muyeed, a passionate software engineer specializing in software development, data, and machine learning, with over 24 months of co-op experience. 
+                    I’m Muyeed, a passionate software engineer specializing in software development, data, and machine learning, with over 24 months of co-op experience. 
                     I have expertise in a wide range of technologies, from programming languages like Python, Java, and JavaScript to frameworks such as Spring Boot, 
                     React.js, and Node.js. I also have hands-on experience with both relational and non-relational databases like MSSQL, PostgreSQL, and MongoDB, along 
                     with cloud technologies such as Azure and Kubernetes.
