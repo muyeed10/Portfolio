@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Projects from './components/Projects';
 import SkillSection from './components/SkillSection';
 import Contact from './components/Contact';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <LandingPage />
       <LandingTwo />
       <AboutMe />
+      <Experience />
       <SkillSection />
       <Projects />
       <Contact />

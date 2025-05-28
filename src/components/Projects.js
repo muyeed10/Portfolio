@@ -49,12 +49,10 @@ const Projects = () => {
             Links: ['', '']
         },
         {
-            name: 'Vinto (In Progess)',
-            description: 'Vinto is a picture sharing app with a meticulously crafted user interface and captivating aesthetics, tailor-made for photo enthusiasts and visual storytellers' +
-            ' to store user data. Basic social media app features are all implemented alongside album/collection, image filters, and other image related features.' +
-            ' MongoDB and firebase cloud storage are used simulatenously to store data',
-            tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
-            images: [vintoexplore, vintohome, vintocreate1, vintocreate2, vintologin],
+            name: 'Resume Analyzer (In Progress)',
+            description: 'Implemented an LLM-powered agent using OpenAI’s API in Python to automate resume-job description analysis by providing ATS score, Prons, Cons, etc.',
+            tools: ['Python', 'Flask', 'OpenAI', "LLM", "AI Agent"],
+            images: [errorPic],
             Links: ['', '']
         },
         {
@@ -65,6 +63,15 @@ const Projects = () => {
             images: [catalogGallery, catalogAdminDashboard, catalogcreateNew, cataloglongDes],
             Links: ['', '']
         }, 
+        {
+            name: 'Vinto (In Progess)',
+            description: 'Vinto is a picture sharing app with a meticulously crafted user interface and captivating aesthetics, tailor-made for photo enthusiasts and visual storytellers' +
+            ' to store user data. Basic social media app features are all implemented alongside album/collection, image filters, and other image related features.' +
+            ' MongoDB and firebase cloud storage are used simulatenously to store data',
+            tools: ['React', 'CSS', 'Node', 'MongoDB', 'Tailwind', 'Firebase auth & storage'],
+            images: [vintoexplore, vintohome, vintocreate1, vintocreate2, vintologin],
+            Links: ['', '']
+        },
         {
             name: 'Dublo',
             description: "Twitter/reddit-like social media app where user's can login and use this platform to share their thoughts." 
@@ -91,7 +98,7 @@ const Projects = () => {
             tools: ['SQL', 'Oracle', 'Bash', 'Linux'],
             images: [dentalDBMS1],
             Links: ['', '']
-        }
+        },
     ]
 
     useEffect(() => {
