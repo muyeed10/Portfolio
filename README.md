@@ -3,7 +3,6 @@
 A modern, responsive web application built using **React**, **Tailwind CSS**, **Framer Motion**, and **custom CSS**. This project showcases dynamic UI flows, responsive design, and smooth animations.
 
 🔗 **Live Demo:** [Portfolio Website](https://muyeed10.github.io/Portfolio/)  
-*(Replace the link with your actual deployed site)*
 
 ---
 
