@@ -13,7 +13,7 @@ const LandingPage = () => {
             <div className="landing-content">
                 <h1>Hi! I am</h1>
                 <h1>Muyeed Hossain</h1>
-                <p>Software Engineer || Data Engineer</p>
+                <p>Software || Data || Cloud || Networking</p>
                 <div className="mt-8">
                     <a onClick={() => {
                         const targetSection = document.querySelector('.app-container').querySelector(`#About`)
