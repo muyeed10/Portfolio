@@ -33,10 +33,18 @@ const Projects = () => {
 
     const projectsArr = [
         {
+            name: 'Email Spam detection',
+            description: 'Preprocessed and vectorized email text data using TF-IDF to train a predictive ML model for email spam detection. ' +
+            'Deployed API using Python FastAPI on AWS EC2, supporting real-time data validation and classification',
+            tools: ['Python', 'Fast API', 'AWS', 'EC2', 'ML'],
+            images: [errorPic],
+            Links: ['','']
+        },
+        {
             name: 'TMU MarketPlace',
             description: 'TMU MarketPlace is an online platform created to facilitate buying and selling among TMU students, offering a responsive and user-friendly experience. ' + 
             'The platform allows students to post listings, search for items, and connect with other users, providing a seamless marketplace environment similar to popular services like eBay or Kijiji',
-            tools: ['React', 'Node', 'PostgreSQL', 'Supabase', 'Firebase Auth', 'Tailwind'],
+            tools: ['React', 'Node', 'PostgreSQL', 'Supabase', 'Firebase Auth', 'Github Actions'],
             images: [tmuHomePage, tmuSearchPage, tmuMyProfile, tmuEditProfile, tmuMyListings, tmuAdminDashboard],
             Links: ['https://github.com/eldossjogy/TMU-MarketPlace','https://tmu-marketplace.onrender.com/']
         },
